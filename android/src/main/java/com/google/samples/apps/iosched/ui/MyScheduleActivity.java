@@ -258,6 +258,10 @@ public class MyScheduleActivity extends BaseActivity implements MyScheduleFragme
         }
     }
 
+    private String getTrackName(int position) {
+        return (position == 0 ? "Web & Cloud": "Mobile");
+    }
+
     private void setSlidingTabLayoutContentDescriptions() {
         for (int i = 0; i < Config.CONFERENCE_DAYS.length; i++) {
             mSlidingTabLayout.setContentDescription(i,
@@ -424,7 +428,7 @@ public class MyScheduleActivity extends BaseActivity implements MyScheduleFragme
 
         @Override
         public CharSequence getPageTitle(int position) {
-            return getDayName(position);
+            return getTrackName(position);
         }
     }
 

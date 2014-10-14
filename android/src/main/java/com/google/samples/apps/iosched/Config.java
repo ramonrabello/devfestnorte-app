@@ -43,27 +43,29 @@ public class Config {
     public static final String BOOTSTRAP_DATA_TIMESTAMP = "Thu, 10 Apr 2014 00:01:03 GMT";
 
     // Conference hashtag
-    public static final String CONFERENCE_HASHTAG = "#io14";
+    public static final String CONFERENCE_HASHTAG = "#devfestnorte";
 
     // Patterns that, when absent from a hashtag, will trigger the addition of the
     // CONFERENCE_HASHTAG on sharing snippets. Ex: "#Android" will be shared as "#io14 #Android",
     // but "#iohunt" won't be modified.
-    public static final String CONFERENCE_HASHTAG_PREFIX = "#io";
+    public static final String CONFERENCE_HASHTAG_PREFIX = "#gdg";
 
     // Hard-coded conference dates. This is hardcoded here instead of extracted from the conference
     // data to avoid the Schedule UI breaking if some session is incorrectly set to a wrong date.
     public static final int CONFERENCE_YEAR = 2014;
 
     public static final long[][] CONFERENCE_DAYS = new long[][] {
-            // start and end of day 1
-            { ParserUtils.parseTime("2014-06-25T07:00:00.000Z"),
-              ParserUtils.parseTime("2014-06-26T06:59:59.999Z") },
-            // start and end of day 2
-            { ParserUtils.parseTime("2014-06-26T07:00:00.000Z"),
-              ParserUtils.parseTime("2014-06-27T06:59:59.999Z") },
-        };
 
-    public static final TimeZone CONFERENCE_TIMEZONE = TimeZone.getTimeZone("America/Los_Angeles");
+            // start and end of track 1
+            { ParserUtils.parseTime("2014-11-01T08:00:00.000Z"),
+              ParserUtils.parseTime("2014-11-01T18:00:00.000Z") },
+
+            // start and end of track 2
+            { ParserUtils.parseTime("2014-11-01T08:00:00.000Z"),
+              ParserUtils.parseTime("2014-11-01T18:00:00.000Z") }
+            };
+
+    public static final TimeZone CONFERENCE_TIMEZONE = TimeZone.getTimeZone("America/Sao_Paulo");
 
     public static final long CONFERENCE_START_MILLIS = CONFERENCE_DAYS[0][0];
     public static final long CONFERENCE_END_MILLIS = CONFERENCE_DAYS[CONFERENCE_DAYS.length-1][1];

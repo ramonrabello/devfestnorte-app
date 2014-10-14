@@ -1,4 +1,5 @@
 {
+
   "speakers": [
     {
       "bio": "Vinicius Gracia é atual CTO e Founder da Easy Taxi. Ele é responsável por toda arquitetura, sistemas e apps de 33 países e tem como missão que o mesmo aplicativo, usado ao redor do globo funcione e se adapte as necessidades diferentes de cada região. Está na Easy Taxi desde a concepção da ideia e realizou o projeto e desenvolvimento de todos os sistemas necessários para a operação. Vinícius sempre teve espirito empreendedor, participou do desenvolvimento de um sistema helpdesk para IBM, todo baseado em web. Antes da internet existir no Brasil, era necessário conectar com a IBM,por meio de internet discada, ligando para os EUA. Desenvolveu sistemas de helpdesk para Acer, Packard Bell, o Compaq Phone, Vários provedores de internet como Mandic, Domain, Openlink. É sócio de mais duas empresas de técnologia, JGracia informática que faz todo sistema de delivery e gerencia de franquias do Giraffas e da Techsamurai que foi onde surgiu a Easy Taxi. Formado em ciência da computação nos Estados Unidos e Engenharia da Computação no Brasil.",
@@ -12,8 +13,8 @@
       "bio": "Formado em Engenharia da Computação pela UFPA, trabalha com o desenvolvimento de aplicativos web e para smartphones na empresa Jambu Tecnologia e como programador e sócio-fundador na Sinextra Game Studio. Costuma ministrar palestras, oficinas e cursos relacionados a área de desenvolvimento de jogos em instituições regionais, já participou do desenvolvimento de jogos para o mercado empresarial e de entretenimento em plataformas mobile, web, desktop e vídeo-games.",
       "name": "Lucas Mousinho",
       "company": "Jambu Tecnologia",
-      "plusoneUrl": "https://plus.google.com/+КириллБояршинов",
-      "thumbnailUrl": "https://lh3.googleusercontent.com/-3cqA1ouzTrE/U0eP8AEBtpI/AAAAAAAAAKM/dTXkJsC9lWM/s880-no/4ffdacefd252abfac93a6a86137fcdb4.jpeg",
+      "plusoneUrl": "https://plus.google.com/u/0/116298837147395936565/posts",
+      "thumbnailUrl": "https://lh6.googleusercontent.com/-hfp1hJx51ts/AAAAAAAAAAI/AAAAAAAAAVE/Hz4geCyoqhA/s120-c/photo.jpg",
       "id": "bc11152b-c4cf-e311-b297-00155d5066d7"
     },
     {
@@ -97,6 +98,7 @@
               "id": "554g1r23-sdf5-e311-b297-00155d5066d7"
       }
   ],
+
   "blocks": [
     {
       "title": "Credenciamento",
@@ -107,7 +109,7 @@
     },
     {
       "title": "Os desafios do desenvolvimento do app nos 33 países",
-      "type": "session",
+      "type": "break",
       "subtitle": "Auditório, Piso 2",
       "start": "2014-11-01T09:00:00.000+07:00",
       "end": "2014-11-01T10:00:00.000+07:00"
@@ -118,112 +120,6 @@
       "subtitle": "Hall, Piso 2",
       "start": "2014-11-01T10:00:00.000+07:00",
       "end": "2014-11-01T10:30:00.000+07:00"
-    },
-    {
-      "title": "Lunch",
-      "type": "break",
-      "subtitle": "Cafe, Level 1",
-      "start": "2014-11-01T13:00:00.000+07:00",
-      "end": "2014-11-01T14:00:00.000+07:00"
-    },
-    {
-      "title": "Lunch",
-      "type": "break",
-      "subtitle": "Cafe, Level 1",
-      "start": "2014-11-02T13:00:00.000+07:00",
-      "end": "2014-11-02T14:00:00.000+07:00"
-    },
-    {
-      "title": "",
-      "type": "free",
-      "subtitle": "",
-      "start": "2014-11-01T10:00:00.000+07:00",
-      "end": "2014-11-01T11:00:00.000+07:00"
-    },
-    {
-      "title": "",
-      "type": "free",
-      "subtitle": "",
-      "start": "2014-11-01T11:00:00.000+07:00",
-      "end": "2014-11-01T12:00:00.000+07:00"
-    },
-    {
-      "title": "",
-      "type": "free",
-      "subtitle": "",
-      "start": "2014-11-01T12:00:00.000+07:00",
-      "end": "2014-11-01T13:00:00.000+07:00"
-    },
-    {
-      "title": "",
-      "type": "free",
-      "subtitle": "",
-      "start": "2014-11-01T13:00:00.000+07:00",
-      "end": "2014-11-01T14:00:00.000+07:00"
-    },
-    {
-      "title": "",
-      "type": "free",
-      "subtitle": "",
-      "start": "2014-11-01T14:00:00.000+07:00",
-      "end": "2014-11-01T15:00:00.000+07:00"
-    },
-    {
-      "title": "",
-      "type": "free",
-      "subtitle": "",
-      "start": "2014-11-01T15:00:00.000+07:00",
-      "end": "2014-11-01T16:00:00.000+07:00"
-    },
-    {
-      "title": "",
-      "type": "free",
-      "subtitle": "",
-      "start": "2014-11-01T16:00:00.000+07:00",
-      "end": "2014-11-01T17:00:00.000+07:00"
-    },
-    {
-      "title": "",
-      "type": "free",
-      "subtitle": "",
-      "start": "2014-11-01T17:00:00.000+07:00",
-      "end": "2014-11-01T18:00:00.000+07:00"
-    },
-
-    {
-      "title": "",
-      "type": "free",
-      "subtitle": "",
-      "start": "2014-11-02T10:00:00.000+07:00",
-      "end": "2014-11-02T11:00:00.000+07:00"
-    },
-    {
-      "title": "",
-      "type": "free",
-      "subtitle": "",
-      "start": "2014-11-02T11:00:00.000+07:00",
-      "end": "2014-11-02T12:00:00.000+07:00"
-    },
-    {
-      "title": "",
-      "type": "free",
-      "subtitle": "",
-      "start": "2014-11-02T12:00:00.000+07:00",
-      "end": "2014-11-02T13:00:00.000+07:00"
-    },
-    {
-      "title": "",
-      "type": "free",
-      "subtitle": "",
-      "start": "2014-11-02T14:00:00.000+07:00",
-      "end": "2014-11-02T15:00:00.000+07:00"
-    },
-    {
-      "title": "",
-      "type": "free",
-      "subtitle": "",
-      "start": "2014-11-02T15:00:00.000+07:00",
-      "end": "2014-11-02T16:00:00.000+07:00"
     }
   ],
 
@@ -309,7 +205,7 @@
           "speakers": ["bc11152b-c4cf-e311-b297-00155d5066d7"],
           "description": "Aprenda sobre as etapas do processo de produção e a utilização da ferramenta open-source LibGDX junto ao SDK do sistema operacional Android para criação de jogos 2D para smartphones.",
           "title": "Desenvolvimento de Jogos para Android",
-          "photoUrl": "https://lh3.googleusercontent.com/-3cqA1ouzTrE/U0eP8AEBtpI/AAAAAAAAAKM/dTXkJsC9lWM/s880-no/4ffdacefd252abfac93a6a86137fcdb4.jpeg",
+          "photoUrl": "https://lh6.googleusercontent.com/-hfp1hJx51ts/AAAAAAAAAAI/AAAAAAAAAVE/Hz4geCyoqhA/s120-c/photo.jpg",
           "url": "http://norte.devfest.com.br",
           "startTimestamp": "2014-11-01T11:30:00+07:00",
           "endTimestamp": "2014-11-01T12:30:00+07:00",
