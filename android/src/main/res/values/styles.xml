@@ -157,10 +157,10 @@
     <!-- Action bar -->
     <style name="ActionBar.Base" parent="FrameworkRoot.ActionBar">
         <item name="android:background">@drawable/actionbar_background</item>
-        <item name="android:icon">@drawable/actionbar_icon</item>
+        <item name="android:icon">@drawable/ic_launcher</item>
         <item name="android:displayOptions">showHome|showTitle</item>
         <item name="android:titleTextStyle">@style/ActionBar.TitleText</item>
-        <item name="android:logo">@drawable/actionbar_logo</item>
+        <item name="android:logo">@drawable/ic_launcher</item>
     </style>
 
     <style name="ActionBar" parent="ActionBar.Base" />
