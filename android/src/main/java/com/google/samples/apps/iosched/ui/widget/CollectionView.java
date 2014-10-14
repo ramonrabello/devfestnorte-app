@@ -42,7 +42,7 @@ public class CollectionView extends ListView {
     private static final String TAG = "CollectionView";
 
     private static final int BUILTIN_VIEWTYPE_HEADER = 0;
-    private static final int BUILTIN_VIEWTYPE_COUNT = 1;
+    private static final int BUILTIN_VIEWTYPE_COUNT  = 1;
 
     private Inventory mInventory = new Inventory();
     private CollectionViewCallbacks mCallbacks = null;

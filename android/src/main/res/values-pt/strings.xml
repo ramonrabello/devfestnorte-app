@@ -608,7 +608,7 @@
 
     <!-- Subtitle of a session indicating time interval and room number -->
     <string name="session_subtitle">
-    <xliff:g id="time">%1$s</xliff:g> na <xliff:g id="room">%2$s</xliff:g>
+    <xliff:g id="time">%1$s</xliff:g> no <xliff:g id="room">%2$s</xliff:g>
   </string>
 
     <!-- Short subtitle for a session indicating time interval -->
