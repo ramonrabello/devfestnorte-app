@@ -71,17 +71,17 @@ public class MapFragment extends com.google.android.gms.maps.MapFragment impleme
         GoogleMap.OnIndoorStateChangeListener, LoaderCallbacks<Cursor>,
         GoogleMap.OnMapLoadedCallback {
 
-    private static final LatLng MOSCONE =  new LatLng(37.783107, -122.403789);
-    private static final LatLng MOSCONE_CAMERA =  new LatLng(37.78308931536713, -122.40409433841705);
+    private static final LatLng MOSCONE =  new LatLng(-1.443063, -48.477950);
+    private static final LatLng MOSCONE_CAMERA =  new LatLng(-1.443063, -48.477950);
 
     // Initial camera zoom
-    private static final float CAMERA_ZOOM = 18.19f;
+    private static final float CAMERA_ZOOM = 17.19f;
     private static final float CAMERA_BEARING = 234.2f;
 
     private static final int INVALID_FLOOR = Integer.MIN_VALUE;
 
     // Estimated number of floors used to initialise data structures with appropriate capacity
-    private static final int INITIAL_FLOOR_COUNT = 3;
+    private static final int INITIAL_FLOOR_COUNT = 1;
 
     // Default level (index of level in IndoorBuilding object for Moscone)
     private static final int MOSCONE_DEFAULT_LEVEL_INDEX = 1;
@@ -314,8 +314,8 @@ public class MapFragment extends com.google.android.gms.maps.MapFragment impleme
         }
 
         mMap.setIndoorEnabled(false);
-        mMap.getUiSettings().setZoomControlsEnabled(false);
-        mMap.setMyLocationEnabled(false);
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        mMap.setMyLocationEnabled(true);
 
         Bundle data = getArguments();
         if (data != null && data.containsKey(EXTRA_ROOM)) {
@@ -402,8 +402,8 @@ public class MapFragment extends com.google.android.gms.maps.MapFragment impleme
 
         if (isValidFloor(mFloor) && mAtMoscone) {
             // Always hide the Moscone marker if a floor is shown
-            mMosconeMaker.setVisible(false);
-            setFloorElementsVisible(mFloor, true);
+//            mMosconeMaker.setVisible(false);
+//            setFloorElementsVisible(mFloor, true);
         } else {
             // Show Moscone marker if this is not a valid floor
             mMosconeMaker.setVisible(true);
