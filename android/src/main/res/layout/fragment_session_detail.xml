@@ -13,7 +13,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<com.google.samples.apps.iosched.ui.widget.ObservableScrollView
+<com.google.samples.apps.devfestnorte.ui.widget.ObservableScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:iosched="http://schemas.android.com/apk/res-auto"
     xmlns:plus="http://schemas.android.com/apk/lib/com.google.android.gms.plus"
@@ -53,7 +53,7 @@
             android:paddingBottom="@dimen/session_details_extra_space_bottom"
             android:clipToPadding="false">
 
-            <com.google.samples.apps.iosched.ui.widget.MessageCardView
+            <com.google.samples.apps.devfestnorte.ui.widget.MessageCardView
                 android:id="@+id/live_now_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
                 android:visibility="gone"
                 />
 
-            <com.google.samples.apps.iosched.ui.widget.MessageCardView
+            <com.google.samples.apps.devfestnorte.ui.widget.MessageCardView
                 android:id="@+id/give_feedback_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -275,4 +275,4 @@
 
     </FrameLayout>
 
-</com.google.samples.apps.iosched.ui.widget.ObservableScrollView>
+</com.google.samples.apps.devfestnorte.ui.widget.ObservableScrollView>

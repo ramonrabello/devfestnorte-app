@@ -61,7 +61,7 @@ appengine {
         }
 
         app {
-            id = 'iosched-updater-dev'
+            id = 'devfestnorte-updater-dev'
         }
     }
 }

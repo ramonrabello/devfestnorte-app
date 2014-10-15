@@ -67,7 +67,7 @@
         android:paddingBottom="8dp"
         android:layout_margin="@dimen/multipane_half_padding">
 
-        <com.google.samples.apps.iosched.ui.widget.SlidingTabLayout
+        <com.google.samples.apps.devfestnorte.ui.widget.SlidingTabLayout
             android:background="@color/tab_background"
             android:id="@+id/livestream_sliding_tabs"
             android:layout_width="match_parent"

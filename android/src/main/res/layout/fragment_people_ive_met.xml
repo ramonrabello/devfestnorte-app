@@ -51,9 +51,9 @@
 
     </LinearLayout>
 
-    <com.google.samples.apps.iosched.ui.widget.CollectionView
+    <com.google.samples.apps.devfestnorte.ui.widget.CollectionView
         android:id="@+id/collection_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.google.samples.apps.iosched.ui.PeopleIveMetFragment" />
+        tools:context="com.google.samples.apps.devfestnorte.ui.PeopleIveMetFragment" />
 </LinearLayout>

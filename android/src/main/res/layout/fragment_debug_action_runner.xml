@@ -17,7 +17,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.google.samples.apps.iosched.ui.debug.DebugActionRunnerActivity$PlaceholderFragment">
+    tools:context="com.google.samples.apps.devfestnorte.ui.debug.DebugActionRunnerActivity$PlaceholderFragment">
 
     <LinearLayout
         android:layout_width="fill_parent"

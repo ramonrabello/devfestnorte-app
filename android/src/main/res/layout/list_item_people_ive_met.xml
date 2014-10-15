@@ -23,7 +23,7 @@
     android:layout_height="wrap_content"
     android:background="?android:selectableItemBackground">
 
-    <com.google.samples.apps.iosched.ui.widget.BezelImageView
+    <com.google.samples.apps.devfestnorte.ui.widget.BezelImageView
         android:id="@+id/image"
         android:layout_marginLeft="@dimen/keyline_1"
         android:layout_marginTop="16dp"

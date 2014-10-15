@@ -14,7 +14,7 @@
   limitations under the License.
   -->
 
-<com.google.samples.apps.iosched.ui.widget.CheckableFrameLayout
+<com.google.samples.apps.devfestnorte.ui.widget.CheckableFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/add_schedule_button"
     android:layout_width="@dimen/add_to_schedule_button_height"
@@ -34,4 +34,4 @@
         android:contentDescription="@null"
         android:layout_gravity="center" />
 
-</com.google.samples.apps.iosched.ui.widget.CheckableFrameLayout>
+</com.google.samples.apps.devfestnorte.ui.widget.CheckableFrameLayout>

@@ -23,7 +23,7 @@
     android:focusable="true"
     android:clickable="true">
 
-    <com.google.samples.apps.iosched.ui.widget.BezelImageView
+    <com.google.samples.apps.devfestnorte.ui.widget.BezelImageView
         android:id="@+id/profile_image"
         android:layout_marginLeft="@dimen/keyline_1"
         android:layout_width="34dp"
