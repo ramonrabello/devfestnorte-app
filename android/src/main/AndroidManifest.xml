@@ -17,7 +17,7 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.google.samples.apps.devfestnorte"
+    package="br.com.devfest.norte"
     android:versionCode="1"
     android:versionName="0.1"
     android:installLocation="auto">
@@ -28,7 +28,7 @@
         android:targetSdkVersion="L" />
 
     <permission
-        android:name="com.google.samples.apps.devfestnorte.permission.WRITE_SCHEDULE"
+        android:name="br.com.devfest.norte.permission.WRITE_SCHEDULE"
         android:protectionLevel="normal"
         android:label="@string/permission_write"
         android:description="@string/permission_write" />
@@ -58,16 +58,16 @@
     <uses-permission
             android:name="com.google.android.c2dm.permission.RECEIVE" />
     <permission
-            android:name="com.google.samples.apps.devfestnorte.permission.C2D_MESSAGE"
+            android:name="br.com.devfest.norte.permission.C2D_MESSAGE"
             android:protectionLevel="signature" />
     <uses-permission
-            android:name="com.google.samples.apps.iosched.permission.C2D_MESSAGE" />
+            android:name="br.com.devfest.norte.permission.C2D_MESSAGE" />
 
     <!-- required for MapView v2 -->
     <permission
-        android:name="com.google.samples.apps.devfestnorte.permission.MAPS_RECEIVE"
+        android:name="br.com.devfest.norte.permission.MAPS_RECEIVE"
         android:protectionLevel="signature"/>
-    <uses-permission android:name="com.google.samples.apps.iosched.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="br.com.devfest.norte.permission.MAPS_RECEIVE"/>
     <uses-feature
         android:glEsVersion="0x00020000"
         android:required="true"/>
@@ -101,21 +101,21 @@
         <!-- Activities for both phones and tablets -->
 
         <activity
-            android:name="com.google.samples.apps.devfestnorte.ui.MyScheduleActivity"
+            android:name="br.com.devfest.norte.ui.MyScheduleActivity"
             android:label="@string/title_my_schedule"
             android:theme="@style/Theme.IOSched.MySchedule"
             android:launchMode="singleTop"/>
 
         <activity
-            android:name="com.google.samples.apps.devfestnorte.ui.SocialActivity"
+            android:name="br.com.devfest.norte.ui.SocialActivity"
             android:label="@string/navdrawer_item_social"
             android:theme="@style/Theme.IOSched.Social" />
 
-        <activity android:name="com.google.samples.apps.devfestnorte.ui.SessionLivestreamActivity"
+        <activity android:name="br.com.devfest.norte.ui.SessionLivestreamActivity"
             android:label="@string/session_livestream_title"
             android:configChanges="orientation|screenSize"
             android:theme="@style/Theme.IOSched.Livestream"
-            android:parentActivityName="com.google.samples.apps.devfestnorte.ui.MyScheduleActivity">
+            android:parentActivityName="br.com.devfest.norte.ui.MyScheduleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -123,13 +123,13 @@
         </activity>
 
         <activity
-            android:name="com.google.samples.apps.devfestnorte.ui.SettingsActivity"
+            android:name="br.com.devfest.norte.ui.SettingsActivity"
             android:label="@string/title_settings"
             android:theme="@style/Theme.IOSched.WithElevatedHeader"
-            android:parentActivityName="com.google.samples.apps.devfestnorte.ui.MyScheduleActivity" />
+            android:parentActivityName="br.com.devfest.norte.ui.MyScheduleActivity" />
 
         <activity
-            android:name="com.google.samples.apps.devfestnorte.ui.NfcBadgeActivity"
+            android:name="br.com.devfest.norte.ui.NfcBadgeActivity"
             android:theme="@android:style/Theme.NoDisplay"
             android:label="@string/app_name"
             android:noHistory="true"
@@ -142,10 +142,10 @@
         </activity>
 
         <activity
-            android:name="com.google.samples.apps.devfestnorte.ui.BrowseSessionsActivity"
+            android:name="br.com.devfest.norte.ui.BrowseSessionsActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.IOSched.Sessions"
-            android:parentActivityName="com.google.samples.apps.devfestnorte.ui.MyScheduleActivity">
+            android:parentActivityName="br.com.devfest.norte.ui.MyScheduleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -157,10 +157,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.google.samples.apps.devfestnorte.ui.SearchActivity"
+        <activity android:name="br.com.devfest.norte.ui.SearchActivity"
             android:label="@string/title_search"
             android:theme="@style/Theme.IOSched.Search"
-            android:parentActivityName="com.google.samples.apps.devfestnorte.ui.BrowseSessionsActivity">
+            android:parentActivityName="br.com.devfest.norte.ui.BrowseSessionsActivity">
 
             <!-- This Activity handles the search intent -->
             <intent-filter>
@@ -170,7 +170,7 @@
             <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
         </activity>
 
-        <activity android:name="com.google.samples.apps.devfestnorte.ui.SessionFeedbackActivity"
+        <activity android:name="br.com.devfest.norte.ui.SessionFeedbackActivity"
             android:label="@string/title_session_feedback"
             android:theme="@style/Theme.IOSched.WithElevatedHeader">
             <intent-filter>
@@ -180,17 +180,17 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.google.samples.apps.devfestnorte.ui.WelcomeActivity" android:theme="@style/Theme.IOSched.Welcome" />
+        <activity android:name="br.com.devfest.norte.ui.WelcomeActivity" android:theme="@style/Theme.IOSched.Welcome" />
 
-        <activity android:name="com.google.samples.apps.devfestnorte.ui.VideoLibraryActivity"
+        <activity android:name="br.com.devfest.norte.ui.VideoLibraryActivity"
             android:theme="@style/Theme.IOSched.VideoLibrary"
             android:label="@string/title_video_library"
         />
 
-        <activity android:name="com.google.samples.apps.devfestnorte.ui.SessionDetailActivity"
+        <activity android:name="br.com.devfest.norte.ui.SessionDetailActivity"
             android:label="@string/title_session_detail"
             android:theme="@style/Theme.IOSched.SessionDetails"
-            android:parentActivityName="com.google.samples.apps.devfestnorte.ui.BrowseSessionsActivity">
+            android:parentActivityName="br.com.devfest.norte.ui.BrowseSessionsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -214,68 +214,68 @@
         </activity>
 
         <activity
-            android:name="com.google.samples.apps.devfestnorte.ui.NearbyEulaActivity"
+            android:name="br.com.devfest.norte.ui.NearbyEulaActivity"
             android:theme="@style/Theme.IOSched.Welcome" />
 
         <!-- Phone-only activities -->
         <activity
-            android:name="com.google.samples.apps.devfestnorte.ui.phone.MapActivity"
+            android:name="br.com.devfest.norte.ui.phone.MapActivity"
             android:label="@string/title_map"
             android:exported="true"
             android:configChanges="orientation|keyboardHidden"
             android:theme="@style/Theme.IOSched.Map">
-            <meta-data android:name="com.google.samples.apps.devfestnorte.meta.TARGET_FORM_FACTOR"
+            <meta-data android:name="br.com.devfest.norte.meta.TARGET_FORM_FACTOR"
                 android:value="handset" />
         </activity>
 
         <!-- Tablet-only activities -->
         <activity
-            android:name="com.google.samples.apps.devfestnorte.ui.tablet.MapMultiPaneActivity"
+            android:name="br.com.devfest.norte.ui.tablet.MapMultiPaneActivity"
             android:label="@string/title_map"
             android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.IOSched.Map">
-            <meta-data android:name="com.google.samples.apps.devfestnorte.meta.TARGET_FORM_FACTOR"
+            <meta-data android:name="br.com.devfest.norte.meta.TARGET_FORM_FACTOR"
                 android:value="tablet" />
         </activity>
 
         <!-- TaskStackBuilder proxy activity for widgets and notifications. -->
 
         <activity
-            android:name="com.google.samples.apps.devfestnorte.ui.TaskStackBuilderProxyActivity"
+            android:name="br.com.devfest.norte.ui.TaskStackBuilderProxyActivity"
             android:theme="@android:style/Theme.NoDisplay" />
 
         <activity
-            android:name="com.google.samples.apps.devfestnorte.ui.debug.DebugActionRunnerActivity"
+            android:name="br.com.devfest.norte.ui.debug.DebugActionRunnerActivity"
             android:label="@string/title_activity_debug_test_runner"
-            android:parentActivityName="com.google.samples.apps.devfestnorte.ui.MyScheduleActivity" />
+            android:parentActivityName="br.com.devfest.norte.ui.MyScheduleActivity" />
 
         <!-- Experts directory -->
-        <activity android:name="com.google.samples.apps.devfestnorte.ui.ExpertsDirectoryActivity"
+        <activity android:name="br.com.devfest.norte.ui.ExpertsDirectoryActivity"
             android:label="@string/title_experts_directory"
             android:theme="@style/Theme.IOSched.ExpertsDirectory"/>
 
         <activity
-            android:name="com.google.samples.apps.devfestnorte.ui.debug.actions.ViewFilesInAppFolderActivity"
+            android:name="br.com.devfest.norte.ui.debug.actions.ViewFilesInAppFolderActivity"
             android:label="list files in appdata folder"
-            android:parentActivityName="com.google.samples.apps.devfestnorte.ui.debug.DebugActionRunnerActivity" >
+            android:parentActivityName="br.com.devfest.norte.ui.debug.DebugActionRunnerActivity" >
         </activity>
 
         <!-- People I've Met -->
-        <activity android:name="com.google.samples.apps.devfestnorte.ui.PeopleIveMetActivity"
+        <activity android:name="br.com.devfest.norte.ui.PeopleIveMetActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.IOSched.PeopleIveMet"/>
 
 	    <!-- Session alarm/calendar integrating components. -->
-        <receiver android:name="com.google.samples.apps.devfestnorte.receiver.SessionAlarmReceiver" >
+        <receiver android:name="br.com.devfest.norte.receiver.SessionAlarmReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="com.google.samples.apps.iosched.action.UPDATE_CALENDAR_COMPLETED" />
+                <action android:name="br.com.devfest.norte.action.UPDATE_CALENDAR_COMPLETED" />
             </intent-filter>
         </receiver>
-        <service android:name="com.google.samples.apps.devfestnorte.service.SessionAlarmService" />
+        <service android:name="br.com.devfest.norte.service.SessionAlarmService" />
 
-        <service android:name="com.google.samples.apps.devfestnorte.service.SessionCalendarService" />
+        <service android:name="br.com.devfest.norte.service.SessionCalendarService" />
 
         <!-- Used for install referral measurement-->
         <service android:name="com.google.analytics.tracking.android.CampaignTrackingService" />
@@ -294,14 +294,14 @@
           The com.google.android.c2dm.permission.SEND permission is necessary
           so only GCM services can send data messages for the app.
         -->
-        <receiver android:name="com.google.samples.apps.devfestnorte.gcm.GCMRedirectedBroadcastReceiver"
+        <receiver android:name="br.com.devfest.norte.gcm.GCMRedirectedBroadcastReceiver"
             android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
                 <!-- Receives the actual messages. -->
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
                 <!-- Receives the registration id. -->
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-                <category android:name="com.google.samples.apps.iosched" />
+                <category android:name="br.com.devfest.norte" />
             </intent-filter>
         </receiver>
 
@@ -312,19 +312,19 @@
           By default, it must be named .GCMIntentService, unless the
           application uses a custom BroadcastReceiver that redefines its name.
         -->
-        <service android:name="com.google.samples.apps.devfestnorte.gcm.GCMIntentService" />
+        <service android:name="br.com.devfest.norte.gcm.GCMIntentService" />
 
         <!-- Data, sync and schedule editing components -->
 
         <provider
-            android:name="com.google.samples.apps.devfestnorte.provider.ScheduleProvider"
-            android:authorities="com.google.samples.apps.devfestnorte"
-            android:writePermission="com.google.samples.apps.iosched.permission.WRITE_SCHEDULE"
+            android:name="br.com.devfest.norte.provider.ScheduleProvider"
+            android:authorities="br.com.devfest.norte"
+            android:writePermission="br.com.devfest.norte.permission.WRITE_SCHEDULE"
             android:syncable="true"
             android:label="@string/app_name"
             android:exported="true" />
 
-        <service android:name="com.google.samples.apps.devfestnorte.sync.SyncService"
+        <service android:name="br.com.devfest.norte.sync.SyncService"
             android:exported="true"
             tools:ignore="ExportedService">
             <intent-filter>
@@ -336,7 +336,7 @@
 
         <!-- a simple receiver that triggers a sync for any message it receives. used by our
              GCM implementation -->
-        <receiver android:name="com.google.samples.apps.devfestnorte.sync.TriggerSyncReceiver" />
+        <receiver android:name="br.com.devfest.norte.sync.TriggerSyncReceiver" />
 
         <!-- Other manifest items -->
 
@@ -346,7 +346,7 @@
 
         <!-- App widget components -->
 
-        <receiver android:name="com.google.samples.apps.devfestnorte.appwidget.ScheduleWidgetProvider"
+        <receiver android:name="br.com.devfest.norte.appwidget.ScheduleWidgetProvider"
             android:enabled="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -358,13 +358,13 @@
 
         <!-- The service serving the RemoteViews to the collection widget -->
 
-        <service android:name="com.google.samples.apps.devfestnorte.appwidget.ScheduleWidgetRemoteViewsService"
+        <service android:name="br.com.devfest.norte.appwidget.ScheduleWidgetRemoteViewsService"
             android:permission="android.permission.BIND_REMOTEVIEWS"
             android:exported="false"
             android:enabled="true" />
 
         <!-- The service listening for incoming messages from the wear device -->
-        <service android:name="com.google.samples.apps.devfestnorte.service.FeedbackListenerService" >
+        <service android:name="br.com.devfest.norte.service.FeedbackListenerService" >
             <intent-filter>
                 <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
             </intent-filter>

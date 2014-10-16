@@ -28,7 +28,7 @@ android {
     buildToolsVersion "20.0.0"
 
     defaultConfig {
-        applicationId "com.google.samples.apps.devfestnorte"
+        applicationId "br.com.devfest.norte"
         minSdkVersion 20
         targetSdkVersion 20
         versionCode 1

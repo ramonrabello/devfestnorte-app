@@ -51,9 +51,9 @@
 
     </LinearLayout>
 
-    <com.google.samples.apps.devfestnorte.ui.widget.CollectionView
+    <br.com.devfest.norte.ui.widget.CollectionView
         android:id="@+id/collection_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.google.samples.apps.devfestnorte.ui.PeopleIveMetFragment" />
+        tools:context="br.com.devfest.norte.ui.PeopleIveMetFragment" />
 </LinearLayout>

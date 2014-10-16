@@ -21,14 +21,14 @@
     android:layout_height="wrap_content">
 
     <!-- Background photo -->
-    <com.google.samples.apps.devfestnorte.ui.widget.BezelImageView
+    <br.com.devfest.norte.ui.widget.BezelImageView
         android:id="@+id/background_image"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:scaleType="centerCrop" />
 
     <!-- Session photo -->
-    <com.google.samples.apps.devfestnorte.ui.widget.BezelImageView
+    <br.com.devfest.norte.ui.widget.BezelImageView
         android:id="@+id/session_image"
         android:layout_height="match_parent"
         android:layout_width="match_parent"

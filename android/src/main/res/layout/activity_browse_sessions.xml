@@ -23,25 +23,25 @@
     tools:context=".ui.BrowseSessionsActivity">
 
     <!-- Main layout -->
-    <com.google.samples.apps.devfestnorte.ui.widget.DrawShadowFrameLayout
+    <br.com.devfest.norte.ui.widget.DrawShadowFrameLayout
         android:id="@+id/main_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clipChildren="false"
         app:shadowDrawable="@drawable/header_shadow">
 
-        <com.google.samples.apps.devfestnorte.ui.widget.MultiSwipeRefreshLayout
+        <br.com.devfest.norte.ui.widget.MultiSwipeRefreshLayout
             android:id="@+id/swipe_refresh_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <!-- Sessions fragment showing the session grid -->
-            <fragment android:name="com.google.samples.apps.devfestnorte.ui.SessionsFragment"
+            <fragment android:name="br.com.devfest.norte.ui.SessionsFragment"
                 android:id="@+id/sessions_fragment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:layout="@layout/fragment_sessions" />
-        </com.google.samples.apps.devfestnorte.ui.widget.MultiSwipeRefreshLayout>
+        </br.com.devfest.norte.ui.widget.MultiSwipeRefreshLayout>
 
         <LinearLayout style="@style/HeaderBar"
             android:id="@+id/headerbar"
@@ -85,7 +85,7 @@
             android:layout_marginTop="?android:actionBarSize">
             <include layout="@layout/include_butter_bar" />
         </FrameLayout>
-    </com.google.samples.apps.devfestnorte.ui.widget.DrawShadowFrameLayout>
+    </br.com.devfest.norte.ui.widget.DrawShadowFrameLayout>
 
     <!-- Nav drawer -->
     <include layout="@layout/navdrawer_for_ab_overlay" />

@@ -20,7 +20,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.samples.apps.devfestnorte.ui.widget.CollectionView
+    <br.com.devfest.norte.ui.widget.CollectionView
         android:id="@+id/videos_collection_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal">
 
-                <com.google.samples.apps.devfestnorte.ui.widget.NumberRatingBar
+                <br.com.devfest.norte.ui.widget.NumberRatingBar
                     style="@style/FeedbackNumberRatingBar"
                     android:id="@+id/rating_bar_1" />
 
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal">
 
-                <com.google.samples.apps.devfestnorte.ui.widget.NumberRatingBar
+                <br.com.devfest.norte.ui.widget.NumberRatingBar
                     style="@style/FeedbackNumberRatingBar"
                     android:id="@+id/rating_bar_2" />
 
@@ -140,7 +140,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal">
 
-                <com.google.samples.apps.devfestnorte.ui.widget.NumberRatingBar
+                <br.com.devfest.norte.ui.widget.NumberRatingBar
                     style="@style/FeedbackNumberRatingBar"
                     android:id="@+id/rating_bar_3" />
 

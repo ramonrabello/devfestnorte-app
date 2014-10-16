@@ -92,7 +92,7 @@
     </FrameLayout>
 
     <!-- Message card -->
-    <com.google.samples.apps.devfestnorte.ui.widget.MessageCardView
+    <br.com.devfest.norte.ui.widget.MessageCardView
         android:id="@+id/message_card"
         android:layout_width="match_parent"
         android:layout_marginTop="8dp"

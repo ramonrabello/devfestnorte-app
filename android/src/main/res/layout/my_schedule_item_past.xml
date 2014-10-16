@@ -48,7 +48,7 @@
         android:layout_height="match_parent">
 
         <!-- Background photo -->
-        <com.google.samples.apps.devfestnorte.ui.widget.BezelImageView
+        <br.com.devfest.norte.ui.widget.BezelImageView
             app:maskDrawable="@drawable/schedule_background_mask"
             android:id="@+id/background_image"
             android:layout_height="match_parent"
@@ -56,7 +56,7 @@
             android:scaleType="centerCrop" />
 
         <!-- Session photo -->
-        <com.google.samples.apps.devfestnorte.ui.widget.BezelImageView
+        <br.com.devfest.norte.ui.widget.BezelImageView
             app:maskDrawable="@drawable/schedule_background_mask"
             android:id="@+id/session_image"
             android:layout_height="match_parent"
