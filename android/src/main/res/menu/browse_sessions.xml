@@ -21,20 +21,20 @@
         android:orderInCategory="1"
         android:showAsAction="always" />
 
-    <item android:id="@+id/menu_refresh"
+    <!--item android:id="@+id/menu_refresh"
         android:title="@string/description_refresh"
         android:orderInCategory="1"
-        android:showAsAction="never" />
+        android:showAsAction="never" /-->
 
     <item android:id="@+id/menu_wifi"
         android:title="@string/description_configure_wifi"
         android:orderInCategory="98"
         android:showAsAction="never" />
 
-    <item android:id="@+id/menu_i_o_hunt"
+    <!--item android:id="@+id/menu_i_o_hunt"
           android:title="@string/description_i_o_hunt"
           android:orderInCategory="99"
-          android:showAsAction="never" />
+          android:showAsAction="never" /-->
 
     <item android:id="@+id/menu_io_extended"
         android:visible="false"

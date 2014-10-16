@@ -886,7 +886,8 @@ public class SessionsFragment extends Fragment implements
         if (!PrefUtils.hasAnsweredLocalOrRemote(getActivity()) &&
                 !TimeUtils.hasConferenceEnded(getActivity())) {
             // show the "in person" vs "remote" card
-            setupLocalOrRemoteCard(card);
+            // TODO: Definir se vai ser usado a opção evento pela internet????
+//            setupLocalOrRemoteCard(card);
             return true;
         } else if (WiFiUtils.shouldOfferToSetupWifi(getActivity(), true)) {
             // show wifi setup card

@@ -79,7 +79,7 @@ public class Config {
     public static final long DAY_MILLIS = 24 * HOUR_MILLIS;
 
     // OAuth 2.0 related config
-    public static final String APP_NAME = "GoogleIO-Android";
+    public static final String APP_NAME = "GDGDevFestNorte";
     public static final String API_KEY = "";
 
     // Announcements
@@ -111,7 +111,7 @@ public class Config {
 
     // When do we start to offer to set up the user's wifi?
     public static final long WIFI_SETUP_OFFER_START =
-            CONFERENCE_START_MILLIS - 3 * DAY_MILLIS; // 3 days before conference
+            CONFERENCE_START_MILLIS - 30 * DAY_MILLIS; // 3 days before conference
 
     // Format of the youtube link to a Video Library video
     public static final String VIDEO_LIBRARY_URL_FMT = "https://www.youtube.com/watch?v=%s";
