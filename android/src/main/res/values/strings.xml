@@ -377,6 +377,9 @@
     <!-- Menu item to open the People I've Met screen [CHAR_LIMIT=20] -->
     <string name="navdrawer_item_people_ive_met">People I\'ve Met</string>
 
+    <!-- Menu item to open the People I've Met screen [CHAR_LIMIT=20] -->
+    <string name="navdrawer_item_next_devfest">Next DevFest?</string>
+
     <!-- Accessibility description of item to open the People I've Met screen -->
     <string name="navdrawer_item_people_ive_met_a11y">People I\'ve Met</string>
 

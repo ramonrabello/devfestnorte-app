@@ -67,7 +67,7 @@ public class PeopleIveMetActivity extends BaseActivity {
 
     @Override
     protected int getSelfNavDrawerItem() {
-        return NAVDRAWER_ITEM_PEOPLE_IVE_MET;
+        return NAVDRAWER_ITEM_NEXT_DEVFEST;
     }
 
     @Override

@@ -62,16 +62,15 @@ import android.widget.Toast;
 
 import com.google.android.gcm.GCMRegistrar;
 import com.google.android.gms.auth.GoogleAuthUtil;
-import br.com.devfest.norte.BuildConfig;
-import br.com.devfest.norte.R;
-import br.com.devfest.norte.util.LPreviewUtils;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import br.com.devfest.norte.BuildConfig;
 import br.com.devfest.norte.Config;
+import br.com.devfest.norte.R;
 import br.com.devfest.norte.gcm.ServerUtilities;
 import br.com.devfest.norte.io.JSONHandler;
 import br.com.devfest.norte.provider.ScheduleContract;
@@ -84,6 +83,7 @@ import br.com.devfest.norte.util.AccountUtils;
 import br.com.devfest.norte.util.AnalyticsManager;
 import br.com.devfest.norte.util.HelpUtils;
 import br.com.devfest.norte.util.ImageLoader;
+import br.com.devfest.norte.util.LPreviewUtils;
 import br.com.devfest.norte.util.LPreviewUtilsBase;
 import br.com.devfest.norte.util.LoginAndAuthHelper;
 import br.com.devfest.norte.util.PlayServicesUtils;
@@ -146,7 +146,7 @@ public abstract class BaseActivity extends Activity implements
     protected static final int NAVDRAWER_ITEM_SIGN_IN = 5;
     protected static final int NAVDRAWER_ITEM_SETTINGS = 6;
     protected static final int NAVDRAWER_ITEM_EXPERTS_DIRECTORY = 7;
-    protected static final int NAVDRAWER_ITEM_PEOPLE_IVE_MET = 8;
+    protected static final int NAVDRAWER_ITEM_NEXT_DEVFEST = 8;
     protected static final int NAVDRAWER_ITEM_INVALID = -1;
     protected static final int NAVDRAWER_ITEM_SEPARATOR = -2;
     protected static final int NAVDRAWER_ITEM_SEPARATOR_SPECIAL = -3;
@@ -161,7 +161,7 @@ public abstract class BaseActivity extends Activity implements
             R.string.navdrawer_item_sign_in,
             R.string.navdrawer_item_settings,
             R.string.navdrawer_item_experts_directory,
-            R.string.navdrawer_item_people_ive_met
+            R.string.navdrawer_item_next_devfest
     };
 
     // icons for navdrawer items (indices must correspond to above array)
@@ -174,7 +174,7 @@ public abstract class BaseActivity extends Activity implements
             0, // Sign in
             R.drawable.ic_drawer_settings,
             R.drawable.ic_drawer_experts,
-            R.drawable.ic_drawer_people_met,
+		    R.drawable.ic_drawer_search,
     };
 
     // delay to launch nav drawer item, to allow close animation to play
@@ -424,9 +424,9 @@ public abstract class BaseActivity extends Activity implements
         mNavDrawerItems.add(NAVDRAWER_ITEM_SEPARATOR);
 
         // If attendee is on-site, show the People I've Met item
-        if (attendeeAtVenue) {
-            mNavDrawerItems.add(NAVDRAWER_ITEM_PEOPLE_IVE_MET);
-        }
+//        if (attendeeAtVenue) {
+//            mNavDrawerItems.add(NAVDRAWER_ITEM_PEOPLE_IVE_MET);
+//        }
 
         // If the experts directory hasn't expired, show it
         if (!Config.hasExpertsDirectoryExpired()) {
@@ -436,8 +436,9 @@ public abstract class BaseActivity extends Activity implements
         // Other items that are always in the nav drawer irrespective of whether the
         // attendee is on-site or remote:
         mNavDrawerItems.add(NAVDRAWER_ITEM_SOCIAL);
-        mNavDrawerItems.add(NAVDRAWER_ITEM_VIDEO_LIBRARY);
+        //mNavDrawerItems.add(NAVDRAWER_ITEM_VIDEO_LIBRARY);
         mNavDrawerItems.add(NAVDRAWER_ITEM_SEPARATOR_SPECIAL);
+	    mNavDrawerItems.add(NAVDRAWER_ITEM_NEXT_DEVFEST);
         mNavDrawerItems.add(NAVDRAWER_ITEM_SETTINGS);
 
         createNavDrawerItems();
@@ -802,7 +803,7 @@ public abstract class BaseActivity extends Activity implements
                 startActivity(intent);
                 finish();
                 break;
-            case NAVDRAWER_ITEM_PEOPLE_IVE_MET:
+            case NAVDRAWER_ITEM_NEXT_DEVFEST:
                 intent = new Intent(this, PeopleIveMetActivity.class);
                 startActivity(intent);
                 finish();
