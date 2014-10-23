@@ -804,9 +804,9 @@ public abstract class BaseActivity extends Activity implements
                 finish();
                 break;
             case NAVDRAWER_ITEM_NEXT_DEVFEST:
-                intent = new Intent(this, PeopleIveMetActivity.class);
+                intent = new Intent(this, NextYearDevFest.class);
                 startActivity(intent);
-                finish();
+                //finish();
                 break;
             case NAVDRAWER_ITEM_SIGN_IN:
                 signInOrCreateAnAccount();

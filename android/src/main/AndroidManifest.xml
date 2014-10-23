@@ -266,6 +266,10 @@
             android:label="@string/app_name"
             android:theme="@style/Theme.IOSched.PeopleIveMet"/>
 
+        <activity android:name="br.com.devfest.norte.ui.NextYearDevFest"
+                  android:label="@string/app_name"
+                  android:theme="@style/Theme.IOSched.NextYearDevFest"/>
+
 	    <!-- Session alarm/calendar integrating components. -->
         <receiver android:name="br.com.devfest.norte.receiver.SessionAlarmReceiver" >
             <intent-filter>

@@ -149,6 +149,12 @@
         <item name="android:windowContentOverlay">@drawable/header_shadow</item>
     </style>
 
+    <!-- Next Year DevFest -->
+    <style name="Theme.IOSched.NextYearDevFest" parent="Theme.IOSched">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@color/gray_background</item>
+    </style>
+
     <!-- Experts -->
     <style name="Theme.IOSched.ExpertsDirectory" parent="Theme.IOSched">
         <item name="android:windowActionBarOverlay">true</item>
