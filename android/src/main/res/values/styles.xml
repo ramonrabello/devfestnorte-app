@@ -151,8 +151,7 @@
 
     <!-- Next Year DevFest -->
     <style name="Theme.IOSched.NextYearDevFest" parent="Theme.IOSched">
-        <item name="android:windowActionBarOverlay">true</item>
-        <item name="android:windowBackground">@color/gray_background</item>
+        <item name="android:windowActionBarOverlay">false</item>
     </style>
 
     <!-- Experts -->
