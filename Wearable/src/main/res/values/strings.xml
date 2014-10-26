@@ -15,7 +15,7 @@
   -->
 
 <resources>
-    <string name="app_name" translatable="false">IOWear</string>
+    <string name="app_name" translatable="false">Wear</string>
 
     <!-- Question on survey form asking the user to give their overall opinion on the session. -->
     <string name="q0">Rate this session overall:</string>

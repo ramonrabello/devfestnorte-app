@@ -53,7 +53,7 @@
         android:layout_weight="5"
         android:orientation="vertical">
 
-        <com.google.samples.apps.iosched.ui.widget.SlidingTabLayout
+        <br.com.devfest.norte.ui.widget.SlidingTabLayout
             android:background="@color/tab_background"
             android:id="@+id/livestream_sliding_tabs"
             android:layout_width="match_parent"

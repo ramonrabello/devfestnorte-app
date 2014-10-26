@@ -48,11 +48,11 @@
         android:orderInCategory="100"
         android:showAsAction="never" />
 
-    <item android:id="@+id/menu_debug"
-        android:visible="false"
-        android:title="@string/description_debug"
-        android:orderInCategory="101"
-        android:showAsAction="never" />
+    <!--<item android:id="@+id/menu_debug"-->
+        <!--android:visible="false"-->
+        <!--android:title="@string/description_debug"-->
+        <!--android:orderInCategory="101"-->
+        <!--android:showAsAction="never" />-->
 
     <item android:id="@+id/menu_about"
         android:title="@string/description_about"

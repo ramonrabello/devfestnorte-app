@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.google.android.apps.iosched.gcm.server.db;
+package com.google.android.apps.devfestnorte.gcm.server.db;
 
-import com.google.android.apps.iosched.gcm.server.db.models.Device;
-import com.google.android.apps.iosched.gcm.server.db.models.MulticastMessage;
+import com.google.android.apps.devfestnorte.gcm.server.db.models.Device;
+import com.google.android.apps.devfestnorte.gcm.server.db.models.MulticastMessage;
 import com.googlecode.objectify.Objectify;
 import com.googlecode.objectify.ObjectifyFactory;
 import com.googlecode.objectify.ObjectifyService;
 
 /** Static initializer for Objectify ORM service.
  *
- * <p>To use this class: com.google.android.apps.iosched.gcm.server.db.OfyService.ofy;
+ * <p>To use this class: com.google.android.apps.devfestnorte.gcm.server.db.OfyService.ofy;
  *
  * <p>This is responsible for registering model classes with Objectify before any references
  * access to the ObjectifyService takes place. All models *must* be registered here, as Objectify

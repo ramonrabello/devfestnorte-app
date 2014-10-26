@@ -72,14 +72,14 @@
                         android:textSize="@dimen/text_size_medium"
                         android:text="@string/welcome_text" />
 
-                    <TextView
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:layout_width="match_parent"
-                        android:textColor="@color/body_text_2"
-                        android:textSize="@dimen/text_size_medium"
-                        android:autoLink="web"
-                        android:text="@string/eula_legal_text" />
+                    <!--<TextView-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="16dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:textColor="@color/body_text_2"-->
+                        <!--android:textSize="@dimen/text_size_medium"-->
+                        <!--android:autoLink="web"-->
+                        <!--android:text="@string/eula_legal_text" />-->
 
                 </LinearLayout>
             </FrameLayout>

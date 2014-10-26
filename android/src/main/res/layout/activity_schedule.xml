@@ -26,6 +26,7 @@
         android:id="@+id/main_content"
         android:layout_width="match_parent"
         android:orientation="vertical"
+        android:background="@color/gray_background"
         android:layout_height="match_parent">
 
         <LinearLayout style="@style/HeaderBar"
@@ -35,18 +36,7 @@
 
             <include layout="@layout/toolbar_actionbar" />
 
-            <!--<com.google.samples.apps.iosched.ui.widget.SlidingTabLayout-->
-                <!--android:background="@color/tab_background"-->
-                <!--android:id="@+id/sliding_tabs"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content" />-->
         </LinearLayout>
-
-        <!--<com.google.samples.apps.iosched.ui.widget.MultiSwipeRefreshLayout-->
-            <!--android:id="@+id/swipe_refresh_layout"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--app:foreground="@drawable/header_shadow">-->
 
             <android.support.v4.view.ViewPager
                 android:id="@+id/view_pager"
@@ -62,10 +52,8 @@
 
             </android.support.v4.view.ViewPager>
 
-
-        <!--</com.google.samples.apps.iosched.ui.widget.MultiSwipeRefreshLayout>-->
-
         <include layout="@layout/include_butter_bar" />
+
     </LinearLayout>
 
 

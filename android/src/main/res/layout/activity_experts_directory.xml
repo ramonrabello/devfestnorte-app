@@ -24,14 +24,14 @@
     android:layout_height="match_parent">
 
     <!-- Main layout -->
-    <com.google.samples.apps.iosched.ui.widget.DrawShadowFrameLayout
+    <br.com.devfest.norte.ui.widget.DrawShadowFrameLayout
         android:id="@+id/main_content"
         android:layout_width="match_parent"
         android:background="#fff0f0f0"
         android:layout_height="match_parent"
         app:shadowDrawable="@drawable/header_shadow">
 
-        <fragment android:name="com.google.samples.apps.iosched.ui.ExpertsDirectoryFragment"
+        <fragment android:name="br.com.devfest.norte.ui.ExpertsDirectoryFragment"
             android:id="@+id/experts_fragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -70,7 +70,7 @@
 
             </LinearLayout>
         </LinearLayout>
-    </com.google.samples.apps.iosched.ui.widget.DrawShadowFrameLayout>
+    </br.com.devfest.norte.ui.widget.DrawShadowFrameLayout>
 
     <!-- Nav drawer -->
     <include layout="@layout/navdrawer_for_ab_overlay" />

@@ -61,7 +61,7 @@ gae {
         }
 
         app {
-            id = 'iosched-gcm-dev'
+            id = 'devfestnorte-gcm-dev'
         }
     }
 }

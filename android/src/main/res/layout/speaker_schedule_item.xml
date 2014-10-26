@@ -115,7 +115,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <com.google.samples.apps.iosched.ui.widget.BezelImageView
+                <br.com.devfest.norte.ui.widget.BezelImageView
                     android:id="@+id/speaker_image"
                     android:layout_width="@dimen/speaker_image_size"
                     android:layout_height="@dimen/speaker_image_size"

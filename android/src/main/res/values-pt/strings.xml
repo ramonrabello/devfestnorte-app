@@ -42,7 +42,9 @@
     </plurals>
 
     <!-- Shown in the 'About' window of the app. -->
-    <string name="about_body">&lt;b&gt;GDG DevFest Norte 2014&lt;/b&gt;&lt;br&gt; Versão %s &lt;br&gt;&lt;br&gt; &lt;a href=http://m.google.com/utos&gt;Termos de Serviço&lt;/a&gt;&lt;br&gt;&lt;br&gt; &lt;a href=http://www.google.com/policies/privacy/&gt;Política de Privacidade&lt;/a&gt;</string>
+    <!--<string name="about_body">&lt;b&gt;GDG DevFest Norte 2014&lt;/b&gt;&lt;br&gt; Versão %s &lt;br&gt;&lt;br&gt; &lt;a href=http://m.google.com/utos&gt;Termos de Serviço&lt;/a&gt;&lt;br&gt;&lt;br&gt; &lt;a href=http://www.google.com/policies/privacy/&gt;Política de Privacidade&lt;/a&gt;</string>-->
+
+    <string name="about_body">&lt;b&gt;GDG DevFest Norte 2014&lt;/b&gt;&lt;br&gt; Versão %s &lt;br&gt;&lt;br&gt; Este aplicativo foi desenvolvido por: &lt;br&gt;&lt;br&gt;&lt;a href=https://plus.google.com/+RamonRabello&gt;Ramon Rabello (GDG Belém)&lt;/a;&gt;&lt;br&gt;&lt;br&gt;&lt;a href=https://plus.google.com/+GabrielBernardoPereira&gt;Gabriel Pereira (GDG Manaus)&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;a href=https://plus.google.com/+SanthyagoGallao&gt;Santhyago Gallão (GDG Manaus)&lt;/a&gt;</string>
 
     <!-- Shown as a link in the About screen of the app; user can click to see the EULA. -->
     <string name="about_eula">Contrato de Licença do Usuário Final</string>
@@ -324,6 +326,9 @@
 
     <!-- Menu item to open the People I've Met screen [CHAR_LIMIT=20] -->
     <string name="navdrawer_item_people_ive_met">Pessoas que Conheci</string>
+
+    <!-- Menu item to open the Next DevFest Poll screen [CHAR_LIMIT=20] -->
+    <string name="navdrawer_item_next_devfest">DevFest Norte 2015</string>
 
     <!-- Accessibility description of item to open the People I've Met screen -->
     <string name="navdrawer_item_people_ive_met_a11y">Pessoas que Conheci</string>
@@ -762,4 +767,5 @@
     <string name="pref_nearby_title">Ativar Experimento PhysicalWeb</string>
     <string name="title_experts_directory">Especialistas</string>
     <string name="title_people_ive_met">Pessoas que Conheci</string>
+    <string name="title_next_year_devfest">DevFest Norte 2015</string>
 </resources>

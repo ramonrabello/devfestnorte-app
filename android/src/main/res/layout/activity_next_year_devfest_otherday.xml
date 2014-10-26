@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    tools:context=".ui.NextYearDevFest">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="100dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_actionbar" />
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginTop="100dp"-->
+        <!--android:background="@drawable/card_bg"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:text="GDG DevFest Norte"-->
+        <!--android:textSize="22sp"-->
+        <!--android:textStyle="bold"-->
+        <!--/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="Volte durante o evento e ajude a escolher a cidade onde estaremos em 2015!"-->
+        <!--android:textSize="18sp"/>-->
+        <!---->
+        <!---->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:paddingBottom="16dp"
+            android:layout_gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/font_fontFamily_medium"
+                android:text="Ops! A votação ainda não está disponível"
+                android:textColor="@color/theme_primary"
+                android:textSize="@dimen/text_size_xlarge"
+                android:textStyle="@integer/font_textStyle_medium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:autoLink="web"
+                android:text="Acesse novamente esta tela durante o evento e ajude a escolher a cidade onde estaremos em 2015!"
+                android:textColor="@color/body_text_2"
+                android:textSize="@dimen/text_size_medium" />
+
+            <!--<TextView-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:textColor="@color/body_text_2"-->
+            <!--android:textSize="@dimen/text_size_medium"-->
+            <!--android:autoLink="web"-->
+            <!--android:text="@string/eula_legal_text" />-->
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/navdrawer" />
+
+</android.support.v4.widget.DrawerLayout>
+
+

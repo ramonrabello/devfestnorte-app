@@ -16,7 +16,7 @@
   limitations under the License.
   -->
 
-<com.google.samples.apps.iosched.ui.widget.CollectionView
+<br.com.devfest.norte.ui.widget.CollectionView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:iosched="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -28,4 +28,4 @@
     android:layout_marginEnd="@dimen/social_hz_margin"
     android:clipToPadding="false"
     iosched:internalPadding="@dimen/social_grid_padding"
-    tools:context="com.google.samples.apps.iosched.ui.HashtagsFragment" />
+    tools:context="br.com.devfest.norte.ui.HashtagsFragment" />
