@@ -105,7 +105,8 @@ public abstract class NearbyActivity extends BaseActivity implements NearbyFragm
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        if (mNearbyCapable) {
+        // TODO Mudar se necessario para incluir locais com BLE
+        if (false){//mNearbyCapable) {
             getMenuInflater().inflate(R.menu.nearby, menu);
             MenuItem nearbyItem = menu.findItem(R.id.menu_nearby);
             mNearbyButton =

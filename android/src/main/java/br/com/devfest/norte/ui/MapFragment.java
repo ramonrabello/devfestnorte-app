@@ -86,7 +86,7 @@ public class MapFragment extends com.google.android.gms.maps.MapFragment impleme
 
     // Initial camera zoom
     private static final float CAMERA_ZOOM = 17.19f;
-    private static final float CAMERA_BEARING = 234.2f;
+//    private static final float CAMERA_BEARING = 234.2f;
 
     private static final int INVALID_FLOOR = Integer.MIN_VALUE;
 
@@ -310,7 +310,7 @@ public class MapFragment extends com.google.android.gms.maps.MapFragment impleme
 
         // Add a Marker for Moscone
         mMosconeMaker = mMap.addMarker(MapUtils.createMosconeMarker(mIconGenerator,
-                MOSCONE, getActivity()).visible(false));
+                MOSCONE, getActivity()).visible(true));
 
         mMap.setOnMarkerClickListener(this);
         mMap.setOnInfoWindowClickListener(this);
@@ -320,7 +320,7 @@ public class MapFragment extends com.google.android.gms.maps.MapFragment impleme
 
         if (resetCamera) {
             // Move camera directly to Moscone
-           centerOnMoscone(false);
+           centerOnMoscone(true);
         }
 
         mMap.setIndoorEnabled(false);
@@ -376,7 +376,7 @@ public class MapFragment extends com.google.android.gms.maps.MapFragment impleme
      */
     private void centerOnMoscone(boolean animate) {
         CameraUpdate camera = CameraUpdateFactory.newCameraPosition(
-                new CameraPosition.Builder().bearing(CAMERA_BEARING).target(MOSCONE_CAMERA).zoom(CAMERA_ZOOM).tilt(0f).build());
+                new CameraPosition.Builder().target(MOSCONE_CAMERA).zoom(CAMERA_ZOOM).tilt(0f).build());
         if (animate) {
             mMap.animateCamera(camera);
         } else {
