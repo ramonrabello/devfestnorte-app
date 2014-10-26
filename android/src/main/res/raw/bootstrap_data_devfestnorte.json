@@ -100,29 +100,140 @@
   ],
 
   "blocks": [
-    {
-      "title": "Credenciamento",
-      "type": "break",
-      "subtitle": "Hall, Piso 2",
-      "start": "2014-11-01T08:00:00.000+07:00",
-      "end": "2014-11-01T09:00:00.000+07:00"
-    },
-    {
-      "title": "Os desafios do desenvolvimento do app nos 33 países",
-      "type": "break",
-      "subtitle": "Auditório, Piso 2",
-      "start": "2014-11-01T09:00:00.000+07:00",
-      "end": "2014-11-01T10:00:00.000+07:00"
-    },
-    {
-      "title": "Café",
-      "type": "break",
-      "subtitle": "Hall, Piso 2",
-      "start": "2014-11-01T10:00:00.000+07:00",
-      "end": "2014-11-01T10:30:00.000+07:00"
-    }
-  ],
-
+      {
+        "end": "2014-11-01T11:00:00.000Z",
+        "title": "Credenciamento",
+        "type": "break",
+        "subtitle": "Hall, Piso 2",
+        "start": "2014-11-01T10:00:00.000Z"
+      },
+      {
+        "end": "2014-11-01T20:00:00.000Z",
+        "title": "Almoço",
+        "type": "session",
+        "subtitle": "Cafe, Level 1",
+        "start": "2014-06-25T18:00:00.000Z"
+      },
+      {
+        "end": "2014-06-25T19:00:00.000Z",
+        "title": "",
+        "subtitle": "",
+        "start": "2014-06-25T18:00:00.000Z",
+        "type": "free"
+      },
+      {
+        "end": "2014-06-25T20:00:00.000Z",
+        "title": "",
+        "subtitle": "",
+        "start": "2014-06-25T19:00:00.000Z",
+        "type": "free"
+      },
+      {
+        "end": "2014-06-25T21:00:00.000Z",
+        "title": "",
+        "subtitle": "",
+        "start": "2014-06-25T20:00:00.000Z",
+        "type": "free"
+      },
+      {
+        "end": "2014-06-25T22:00:00.000Z",
+        "title": "",
+        "subtitle": "",
+        "start": "2014-06-25T21:00:00.000Z",
+        "type": "free"
+      },
+      {
+        "end": "2014-06-25T23:00:00.000Z",
+        "title": "",
+        "subtitle": "",
+        "start": "2014-06-25T22:00:00.000Z",
+        "type": "free"
+      },
+      {
+        "end": "2014-06-26T00:00:00.000Z",
+        "title": "",
+        "subtitle": "",
+        "start": "2014-06-25T23:00:00.000Z",
+        "type": "free"
+      },
+      {
+        "end": "2014-06-26T05:00:00.000Z",
+        "title": "After hours",
+        "type": "break",
+        "subtitle": "Enjoy craft brews in our beer garden, San Francisco's illustrious food trucks, and local indie bands.",
+        "start": "2014-06-26T01:30:00.000Z"
+      },
+      {
+        "end": "2014-06-26T16:00:00.000Z",
+        "title": "Breakfast",
+        "type": "break",
+        "subtitle": "Cafe, Level 1",
+        "start": "2014-06-26T14:00:00.000Z"
+      },
+      {
+        "end": "2014-06-26T17:00:00.000Z",
+        "title": "",
+        "subtitle": "",
+        "start": "2014-06-26T16:00:00.000Z",
+        "type": "free"
+      },
+      {
+        "end": "2014-06-26T18:00:00.000Z",
+        "title": "",
+        "subtitle": "",
+        "start": "2014-06-26T17:00:00.000Z",
+        "type": "free"
+      },
+      {
+        "end": "2014-06-26T20:00:00.000Z",
+        "title": "Lunch",
+        "type": "break",
+        "subtitle": "Cafe, Level 1",
+        "start": "2014-06-26T18:00:00.000Z"
+      },
+      {
+        "end": "2014-06-26T19:00:00.000Z",
+        "title": "",
+        "subtitle": "",
+        "start": "2014-06-26T18:00:00.000Z",
+        "type": "free"
+      },
+      {
+        "end": "2014-06-26T20:00:00.000Z",
+        "title": "",
+        "subtitle": "",
+        "start": "2014-06-26T19:00:00.000Z",
+        "type": "free"
+      },
+      {
+        "end": "2014-06-26T21:00:00.000Z",
+        "title": "",
+        "subtitle": "",
+        "start": "2014-06-26T20:00:00.000Z",
+        "type": "free"
+      },
+      {
+        "end": "2014-06-26T22:00:00.000Z",
+        "title": "",
+        "subtitle": "",
+        "start": "2014-06-26T21:00:00.000Z",
+        "type": "free"
+      },
+      {
+        "end": "2014-06-26T23:00:00.000Z",
+        "title": "",
+        "subtitle": "",
+        "start": "2014-06-26T22:00:00.000Z",
+        "type": "free"
+      },
+      {
+        "end": "2014-06-27T00:00:00.000Z",
+        "title": "",
+        "subtitle": "",
+        "start": "2014-06-26T23:00:00.000Z",
+        "type": "free"
+      }
+    ],
   "partners": [],
 
   "sessions": [
@@ -174,7 +285,7 @@
       "tags": [
         "TOPIC_ANDROID"
       ],
-      "mainTag": "TOPIC_ANDROID",
+      "mainTag": "THEME_MOBILE",
       "id": "09dad573-bbe6-e311-b297-00155d5066d8",
       "color": "#E6E600",
       "room": "solarium2",
@@ -229,7 +340,7 @@
           "startTimestamp": "2014-11-01T13:30:00+07:00",
           "endTimestamp": "2014-11-01T14:30:00+07:00",
           "tags": [
-             "TOPIC_ANDROID"
+             "TOPIC_WEB"
           ],
           "mainTag": "THEME_WEB",
           "id": "554g1r23-sdf5-e311-b297-00155d5066d7",
@@ -349,7 +460,7 @@
          "hashtag": "keynote",
          "isLivestream": true,
          "captionsUrl": "",
-         "id": "__keynote__",
+         "id": "876r1z45-dac9-e311-b297-00155d5066d7",
          "tags": [
            "FLAG_KEYNOTE"
          ],
@@ -360,18 +471,6 @@
 
 
 
-  ],
-
-  "video_library": [
-    {
-      "vid": "wtLJPvx7-ys",
-      "title": "GDG DevFest Norte 2014 Keynote",
-      "topic": "",
-      "year": "2014",
-      "thumbnailUrl": "http://eastworks.co.uk/wp-content/uploads/2014/06/io-live.jpg",
-      "id": "wtLJPvx7-ys",
-      "desc": "GDG DevFest Norte 2014 Keynote"
-    }
   ],
 
   "hashtags": [

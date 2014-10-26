@@ -13,14 +13,20 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<ListView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:iosched="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/list_schedule"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:scrollbarStyle="outsideOverlay"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp"
-    android:divider="@null"
-    android:dividerHeight="0dp"
-    android:clipToPadding="false" />
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/keyline_1"
+    android:paddingRight="@dimen/keyline_1">
+
+    <ImageView
+        android:id="@+id/header_schedule_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/base_schedule" />
+
+</LinearLayout>

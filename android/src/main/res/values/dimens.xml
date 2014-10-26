@@ -64,6 +64,9 @@
     <dimen name="text_size_diff_large_small">6sp</dimen>
     <dimen name="speaker_image_size">40dp</dimen>
 
+    <dimen name="text_size_time_hours">25sp</dimen>
+    <dimen name="text_size_time_minutes">18sp</dimen>
+
      <!-- Widget -->
     <dimen name="widget_margin">0dp</dimen>
 

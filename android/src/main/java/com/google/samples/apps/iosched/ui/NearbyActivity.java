@@ -27,9 +27,6 @@ import android.content.pm.PackageManager;
 import android.database.DataSetObserver;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 
 import com.google.samples.apps.iosched.R;
@@ -102,23 +99,23 @@ public abstract class NearbyActivity extends BaseActivity implements NearbyFragm
         super.onPause();
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        if (mNearbyCapable) {
-            getMenuInflater().inflate(R.menu.nearby, menu);
-            MenuItem nearbyItem = menu.findItem(R.id.menu_nearby);
-            mNearbyButton =
-                    (Button) nearbyItem.getActionView().findViewById(R.id.nearby_action_button);
-            mNearbyButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    handleNearbyClick();
-                }
-            });
-            updateNearbyButton();
-        }
-        return super.onCreateOptionsMenu(menu);
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        if (mNearbyCapable) {
+//            getMenuInflater().inflate(R.menu.nearby, menu);
+//            MenuItem nearbyItem = menu.findItem(R.id.menu_nearby);
+//            mNearbyButton =
+//                    (Button) nearbyItem.getActionView().findViewById(R.id.nearby_action_button);
+//            mNearbyButton.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    handleNearbyClick();
+//                }
+//            });
+//            updateNearbyButton();
+//        }
+//        return super.onCreateOptionsMenu(menu);
+//    }
 
     protected abstract void showNearbyFragment(String tag);
 

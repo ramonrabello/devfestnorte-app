@@ -25,7 +25,6 @@ import android.animation.ArgbEvaluator;
 import android.animation.ObjectAnimator;
 import android.animation.TypeEvaluator;
 import android.app.ActionBar;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -44,6 +43,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.provider.Settings;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
 import android.text.TextUtils;
 import android.view.Gravity;
@@ -100,7 +100,7 @@ import static com.google.samples.apps.iosched.util.LogUtils.makeLogTag;
  * A base activity that handles common functionality in the app. This includes the
  * navigation drawer, login and authentication, Action Bar tweaks, amongst others.
  */
-public abstract class BaseActivity extends Activity implements
+public abstract class BaseActivity extends FragmentActivity implements
         LoginAndAuthHelper.Callbacks,
         SharedPreferences.OnSharedPreferenceChangeListener,
         MultiSwipeRefreshLayout.CanChildScrollUpCallback {
@@ -387,12 +387,14 @@ public abstract class BaseActivity extends Activity implements
 
     // Subclasses can override this for custom behavior
     protected void onNavDrawerStateChanged(boolean isOpen, boolean isAnimating) {
-        if (mActionBarAutoHideEnabled && isOpen) {
-            autoShowOrHideActionBar(true);
-        }
+//        if (mActionBarAutoHideEnabled && isOpen) {
+//            autoShowOrHideActionBar(true);
+//        }
     }
 
-    protected void onNavDrawerSlide(float offset) {}
+    protected void onNavDrawerSlide(float offset) {
+
+    }
 
     protected boolean isNavDrawerOpen() {
         return mDrawerLayout != null && mDrawerLayout.isDrawerOpen(Gravity.START);
@@ -424,7 +426,7 @@ public abstract class BaseActivity extends Activity implements
 
         // If attendee is on-site, show the People I've Met item
         if (attendeeAtVenue) {
-            mNavDrawerItems.add(NAVDRAWER_ITEM_PEOPLE_IVE_MET);
+        //    mNavDrawerItems.add(NAVDRAWER_ITEM_PEOPLE_IVE_MET);
         }
 
         // If the experts directory hasn't expired, show it
@@ -435,7 +437,7 @@ public abstract class BaseActivity extends Activity implements
         // Other items that are always in the nav drawer irrespective of whether the
         // attendee is on-site or remote:
         mNavDrawerItems.add(NAVDRAWER_ITEM_SOCIAL);
-        mNavDrawerItems.add(NAVDRAWER_ITEM_VIDEO_LIBRARY);
+        //mNavDrawerItems.add(NAVDRAWER_ITEM_VIDEO_LIBRARY);
         mNavDrawerItems.add(NAVDRAWER_ITEM_SEPARATOR_SPECIAL);
         mNavDrawerItems.add(NAVDRAWER_ITEM_SETTINGS);
 
@@ -715,9 +717,9 @@ public abstract class BaseActivity extends Activity implements
                 WiFiUtils.showWiFiDialog(this);
                 return true;
 
-            case R.id.menu_i_o_hunt:
-                launchIoHunt();
-                return true;
+//            case R.id.menu_i_o_hunt:
+//                launchIoHunt();
+//                return true;
 
             case R.id.menu_debug:
                 if (BuildConfig.DEBUG) {
@@ -777,7 +779,7 @@ public abstract class BaseActivity extends Activity implements
         Intent intent;
         switch (item) {
             case NAVDRAWER_ITEM_MY_SCHEDULE:
-                intent = new Intent(this, MyScheduleActivity.class);
+                intent = new Intent(this, ScheduleActivity.class);
                 startActivity(intent);
                 finish();
                 break;
@@ -801,11 +803,11 @@ public abstract class BaseActivity extends Activity implements
                 startActivity(intent);
                 finish();
                 break;
-            case NAVDRAWER_ITEM_PEOPLE_IVE_MET:
-                intent = new Intent(this, PeopleIveMetActivity.class);
-                startActivity(intent);
-                finish();
-                break;
+//            case NAVDRAWER_ITEM_PEOPLE_IVE_MET:
+//                intent = new Intent(this, PeopleIveMetActivity.class);
+//                startActivity(intent);
+//                finish();
+//                break;
             case NAVDRAWER_ITEM_SIGN_IN:
                 signInOrCreateAnAccount();
                 break;
@@ -813,11 +815,11 @@ public abstract class BaseActivity extends Activity implements
                 intent = new Intent(this, SettingsActivity.class);
                 startActivity(intent);
                 break;
-            case NAVDRAWER_ITEM_VIDEO_LIBRARY:
-                intent = new Intent(this, VideoLibraryActivity.class);
-                startActivity(intent);
-                finish();
-                break;
+//            case NAVDRAWER_ITEM_VIDEO_LIBRARY:
+//                intent = new Intent(this, VideoLibraryActivity.class);
+//                startActivity(intent);
+//                finish();
+//                break;
         }
     }
 

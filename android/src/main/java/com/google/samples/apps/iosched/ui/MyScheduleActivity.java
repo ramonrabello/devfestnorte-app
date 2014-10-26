@@ -17,10 +17,10 @@
 package com.google.samples.apps.iosched.ui;
 
 import android.app.ActionBar;
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.ListFragment;
-import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -39,8 +39,6 @@ import android.text.TextUtils;
 import android.text.method.LinkMovementMethod;
 import android.text.util.Linkify;
 import android.util.TypedValue;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -51,10 +49,16 @@ import com.google.samples.apps.iosched.model.ScheduleHelper;
 import com.google.samples.apps.iosched.provider.ScheduleContract;
 import com.google.samples.apps.iosched.ui.widget.MyScheduleView;
 import com.google.samples.apps.iosched.ui.widget.SlidingTabLayout;
-import com.google.samples.apps.iosched.util.*;
+import com.google.samples.apps.iosched.util.AnalyticsManager;
+import com.google.samples.apps.iosched.util.PrefUtils;
+import com.google.samples.apps.iosched.util.ThrottledContentObserver;
+import com.google.samples.apps.iosched.util.TimeUtils;
+import com.google.samples.apps.iosched.util.UIUtils;
 
 import java.lang.ref.WeakReference;
-import java.util.*;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import static com.google.samples.apps.iosched.util.LogUtils.LOGD;
 import static com.google.samples.apps.iosched.util.LogUtils.makeLogTag;
@@ -432,37 +436,37 @@ public class MyScheduleActivity extends BaseActivity implements MyScheduleFragme
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        super.onCreateOptionsMenu(menu);
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        super.onCreateOptionsMenu(menu);
+//
+//        if (getLPreviewUtils().shouldChangeActionBarForDrawer() && isNavDrawerOpen()) {
+//            // nothing to show if nav drawer is open or animating
+//            return true;
+//        }
+//
+//        getMenuInflater().inflate(R.menu.my_schedule, menu);
+//        configureStandardMenuItems(menu);
+//        return true;
+//    }
 
-        if (getLPreviewUtils().shouldChangeActionBarForDrawer() && isNavDrawerOpen()) {
-            // nothing to show if nav drawer is open or animating
-            return true;
-        }
-
-        getMenuInflater().inflate(R.menu.my_schedule, menu);
-        configureStandardMenuItems(menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.menu_search:
-                /* [ANALYTICS:EVENT]
-                 * TRIGGER:   Click the search button on the Schedule screen.
-                 * CATEGORY:  'Schedule'
-                 * ACTION:    'launchsearch'
-                 * LABEL:     (none)
-                 * [/ANALYTICS]
-                 */
-                AnalyticsManager.sendEvent(SCREEN_LABEL, "launchsearch", "");
-                startActivity(new Intent(this, SearchActivity.class));
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        switch (item.getItemId()) {
+//            case R.id.menu_search:
+//                /* [ANALYTICS:EVENT]
+//                 * TRIGGER:   Click the search button on the Schedule screen.
+//                 * CATEGORY:  'Schedule'
+//                 * ACTION:    'launchsearch'
+//                 * LABEL:     (none)
+//                 * [/ANALYTICS]
+//                 */
+//                AnalyticsManager.sendEvent(SCREEN_LABEL, "launchsearch", "");
+//                startActivity(new Intent(this, SearchActivity.class));
+//                return true;
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
 
     protected void addDataObservers() {
         getContentResolver().registerContentObserver(
