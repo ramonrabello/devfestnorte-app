@@ -888,15 +888,19 @@ public class SessionsFragment extends Fragment implements
             // show the "in person" vs "remote" card
             // TODO: Definir se vai ser usado a opção evento pela internet????
 //            setupLocalOrRemoteCard(card);
-            return true;
+//            return true;
+            card.setVisibility(View.GONE);
+            return false;
         } else if (WiFiUtils.shouldOfferToSetupWifi(getActivity(), true)) {
             // show wifi setup card
             setupWifiOfferCard(card);
             return true;
         } else if (PrefUtils.shouldOfferIOExtended(getActivity(), true)) {
             // show the I/O extended card
-            setupIOExtendedCard(card);
-            return true;
+//            setupIOExtendedCard(card);
+//            return true;
+            card.setVisibility(View.GONE);
+            return false;
         } else {
             card.setVisibility(View.GONE);
             return false;
