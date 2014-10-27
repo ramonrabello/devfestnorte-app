@@ -242,8 +242,8 @@
       "description": "Como CTO & Founder da Easy Taxi, Vinicius Gracia falará em sua palestra a respeito dos desafios do desenvolvimento de um aplicativo, que tem como principal objetivo ajudar a mobilidade urbana nos 33 países em que está presente. Um dos principais pontos será falar sobre a adaptação que o aplicativo precisa ter para atender as necessidades de cada região em que está presente ao redor do globo.",
       "photoUrl": "http://norte.devfest.com.br/img/speakers/Vini.jpg",
       "url": "https://plus.google.com/104454903082510408559",
-      "startTimestamp": "2014-11-01T08:00:00+03:00",
-      "endTimestamp": "2014-11-01T09:00:00+03:00",
+      "startTimestamp": "2014-11-01T09:00:00-03:00",
+      "endTimestamp": "2014-11-01T10:00:00-03:00",
       "title": "Os desafios do desenvolvimento do app nos 33 países",
       "youtubeUrl": "",
       "mainTag": "FLAG_KEYNOTE",
@@ -263,8 +263,8 @@
       "title": "AngularJS: aspectos práticos visando a rapidez",
       "photoUrl": "http://norte.devfest.com.br/img/speakers/evaldo.jpg",
       "url": "http://norte.devfest.com.br",
-      "startTimestamp": "2014-11-01T10:30:00+07:00",
-      "endTimestamp": "2014-11-01T11:30:00+07:00",
+      "startTimestamp": "2014-11-01T10:30:00-03:00",
+      "endTimestamp": "2014-11-01T11:30:00-03:00",
       "tags": ["TOPIC_WEB"],
       "mainTag": "TOPIC_WEB",
       "id": "8767x112-xds1-e311-b297-00155d5066d7",
@@ -280,8 +280,8 @@
       "title": "O caminho de um desenvolvedor Android",
       "photoUrl": "http://norte.devfest.com.br/img/speakers/ramon.jpeg",
       "url": "http://norte.devfest.com.br",
-      "startTimestamp": "2014-11-01T10:30:00+07:00",
-      "endTimestamp": "2014-11-01T11:30:00+07:00",
+      "startTimestamp": "2014-11-01T10:30:00-03:00",
+      "endTimestamp": "2014-11-01T11:30:00-03:00",
       "tags": [
         "TOPIC_ANDROID"
       ],
@@ -299,8 +299,8 @@
       "title": "Conhecendo Go",
       "photoUrl": "http://norte.devfest.com.br/img/speakers/gigante.png",
       "url": "http://norte.devfest.com.br/",
-      "startTimestamp": "2014-11-01T11:30:00+07:00",
-      "endTimestamp": "2014-11-01T12:30:00+07:00",
+      "startTimestamp": "2014-11-01T11:30:00-03:00",
+      "endTimestamp": "2014-11-01T12:30:00-03:00",
       "tags": [
         "TOPIC_WEB"
       ],
@@ -318,8 +318,8 @@
           "title": "Desenvolvimento de Jogos para Android",
           "photoUrl": "http://norte.devfest.com.br/img/speakers/lucas.png",
           "url": "http://norte.devfest.com.br",
-          "startTimestamp": "2014-11-01T11:30:00+07:00",
-          "endTimestamp": "2014-11-01T12:30:00+07:00",
+          "startTimestamp": "2014-11-01T11:30:00-03:00",
+          "endTimestamp": "2014-11-01T12:30:00-03:00",
           "tags": [
             "TOPIC_ANDROID"
           ],
@@ -337,8 +337,8 @@
           "title": "Desenvolvimento Orientado a Testes com AngularJS",
           "photoUrl": "http://norte.devfest.com.br/img/speakers/ike.jpg",
           "url": "http://norte.devfest.com.br",
-          "startTimestamp": "2014-11-01T13:30:00+07:00",
-          "endTimestamp": "2014-11-01T14:30:00+07:00",
+          "startTimestamp": "2014-11-01T13:30:00-03:00",
+          "endTimestamp": "2014-11-01T14:30:00-03:00",
           "tags": [
              "TOPIC_WEB"
           ],
@@ -356,8 +356,8 @@
                "title": "Animando a UI: entregue uma experiência, não apenas um aplicativo",
                "photoUrl": "http://norte.devfest.com.br/img/speakers/santiago.jpg",
                "url": "http://norte.devfest.com.br",
-               "startTimestamp": "2014-11-01T13:30:00+07:00",
-               "endTimestamp": "2014-11-01T14:30:00+07:00",
+               "startTimestamp": "2014-11-01T13:30:00-03:00",
+               "endTimestamp": "2014-11-01T14:30:00-03:00",
                "tags": [
                   "TOPIC_DESIGN",
                   "TOPIC_ANDROID"
@@ -376,8 +376,8 @@
                 "title": "Go para Microserviços",
                 "photoUrl": "http://norte.devfest.com.br/img/speakers/aldrin.jpg",
                 "url": "http://norte.devfest.com.br",
-                "startTimestamp": "2014-11-01T14:30:00+07:00",
-                "endTimestamp": "2014-11-01T15:30:00+07:00",
+                "startTimestamp": "2014-11-01T14:30:00-03:00",
+                "endTimestamp": "2014-11-01T15:30:00-03:00",
                 "tags": [
                    "TOPIC_WEB"
                 ],
@@ -395,8 +395,8 @@
                           "title": "Ionic Framework: aplicações móveis híbridas com HTML5 e Angular JS",
                           "photoUrl": "http://norte.devfest.com.br/img/speakers/gabrielcastro.png",
                           "url": "http://norte.devfest.com.br",
-                          "startTimestamp": "2014-11-01T14:30:00+07:00",
-                          "endTimestamp": "2014-11-01T15:30:00+07:00",
+                          "startTimestamp": "2014-11-01T14:30:00-03:00",
+                          "endTimestamp": "2014-11-01T15:30:00-03:00",
                           "tags": [
                              "TOPIC_WEB"
                           ],
@@ -414,8 +414,8 @@
                                     "title": "WebRTC, transmissão de audio e vídeo Real-time com HTML5",
                                     "photoUrl": "http://norte.devfest.com.br/img/speakers/paulomoura.jpg",
                                     "url": "http://norte.devfest.com.br",
-                                    "startTimestamp": "2014-11-01T16:00:00+07:00",
-                                    "endTimestamp": "2014-11-01T17:00:00+07:00",
+                                    "startTimestamp": "2014-11-01T16:00:00-03:00",
+                                    "endTimestamp": "2014-11-01T17:00:00-03:00",
                                     "tags": [
                                        "TOPIC_WEB"
                                     ],
@@ -433,8 +433,8 @@
                                         "title": "Android L: Conheça as novidades e tendências.",
                                         "photoUrl": "http://norte.devfest.com.br/img/speakers/bryan.jpg",
                                         "url": "http://norte.devfest.com.br",
-                                        "startTimestamp": "2014-11-01T16:00:00+07:00",
-                                        "endTimestamp": "2014-11-01T17:00:00+07:00",
+                                        "startTimestamp": "2014-11-01T16:00:00-03:00",
+                                        "endTimestamp": "2014-11-01T17:00:00-03:00",
                                         "tags": [
                                            "TOPIC_ANDROID"
                                         ],
@@ -451,8 +451,8 @@
          "description": "",
          "photoUrl": "http://norte.devfest.com.br/img/speakers/AleBorba.jpg",
          "url": "http://norte.devfest.com.br",
-         "startTimestamp": "2014-11-01T17:00:00+07:00",
-         "endTimestamp": "2014-11-01T18:00:00+07:00",
+         "startTimestamp": "2014-11-01T17:00:00-03:00",
+         "endTimestamp": "2014-11-01T18:00:00-03:00",
          "title": "Um overview sobre as novidades e tudo o que o Google tem para desenvolvedores.",
          "youtubeUrl": "",
          "mainTag": "FLAG_KEYNOTE",

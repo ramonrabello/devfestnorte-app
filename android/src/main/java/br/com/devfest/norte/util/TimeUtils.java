@@ -20,8 +20,6 @@ import android.content.Context;
 import android.text.TextUtils;
 import android.text.format.DateUtils;
 
-import br.com.devfest.norte.R;
-
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -31,6 +29,7 @@ import java.util.Locale;
 import java.util.TimeZone;
 
 import br.com.devfest.norte.Config;
+import br.com.devfest.norte.R;
 
 public class TimeUtils {
     private static final int SECOND = 1000;
@@ -69,21 +68,21 @@ public class TimeUtils {
     }
 
     private static final SimpleDateFormat[] ACCEPTED_TIMESTAMP_FORMATS = {
-            new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z", Locale.US),
-            new SimpleDateFormat("EEE MMM dd HH:mm:ss yyyy", Locale.US),
-            new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.US),
-            new SimpleDateFormat("yyyy-MM-dd HH:mm:ss Z", Locale.US),
-            new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ", Locale.US),
-            new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'", Locale.US),
-            new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss Z", Locale.US)
+            new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z", new Locale("pt", "br")),
+            new SimpleDateFormat("EEE MMM dd HH:mm:ss yyyy", new Locale("pt", "br")),
+            new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", new Locale("pt", "br")),
+            new SimpleDateFormat("yyyy-MM-dd HH:mm:ss Z", new Locale("pt", "br")),
+            new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ", new Locale("pt", "br")),
+            new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'", new Locale("pt", "br")),
+            new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss Z", new Locale("pt", "br"))
     };
 
     private static final SimpleDateFormat VALID_IFMODIFIEDSINCE_FORMAT =
-            new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z", Locale.US);
+            new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z", new Locale("pt", "br"));
 
     public static Date parseTimestamp(String timestamp) {
         for (SimpleDateFormat format : ACCEPTED_TIMESTAMP_FORMATS) {
-            format.setTimeZone(TimeZone.getTimeZone("GMT"));
+            format.setTimeZone(TimeZone.getTimeZone("America/Sao_Paulo"));
             try {
                 return format.parse(timestamp);
             } catch (ParseException ex) {
