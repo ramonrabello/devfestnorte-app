@@ -43,12 +43,12 @@ public class WelcomeActivity extends Activity {
             }
         });
 
-        findViewById(R.id.button_decline).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+//        findViewById(R.id.button_decline).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                finish();
+//            }
+//        });
     }
 
     @Override

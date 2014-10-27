@@ -18,8 +18,6 @@ package br.com.devfest.norte;
 
 import android.net.Uri;
 
-import br.com.devfest.norte.R;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TimeZone;
@@ -42,7 +40,7 @@ public class Config {
     // Manifest URL override for Debug (staging) builds:
     public static final String MANIFEST_URL = PROD_CONFERENCE_DATA_MANIFEST_URL;
 
-    public static final String BOOTSTRAP_DATA_TIMESTAMP = "Thu, 10 Apr 2014 00:01:03 GMT";
+    public static final String BOOTSTRAP_DATA_TIMESTAMP = "Sat, 01 Nov 2014 00:0:00 GMT";
 
     // Conference hashtag
     public static final String CONFERENCE_HASHTAG = "#devfestnorte";
@@ -95,8 +93,8 @@ public class Config {
     public static final String LIVESTREAM_CAPTIONS_DARK_THEME_URL_PARAM = "&theme=dark";
 
     // Conference public WiFi AP parameters
-    public static final String WIFI_SSID = "IO2014";
-    public static final String WIFI_PASSPHRASE = "letsdothis";
+    public static final String WIFI_SSID = "";
+    public static final String WIFI_PASSPHRASE = "";
 
     // GCM config
     public static final String GCM_SERVER_PROD_URL = "";

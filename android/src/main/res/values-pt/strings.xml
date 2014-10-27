@@ -55,6 +55,8 @@
     <!-- Label on a button that the user clicks to accept a license agreement. -->
     <string name="accept">Aceitar</string>
 
+    <string name="begin">Iniciar</string>
+
     <!-- Label on a button that, when clicked, allows user to add an account to the device. -->
     <string name="add_account">Adicionar Conta</string>
 
@@ -724,7 +726,7 @@
     <string name="watch_now">Assistir Agora!</string>
 
     <!-- Medium-length welcome text indicating the subsequent text is important legal information -->
-    <string name="welcome_text">Antes de começarmos, seguem algumas informações legais importantes em relação ao seu uso deste aplicativo. Isso demora apenas um minuto.</string>
+    <string name="welcome_text">Com esse aplicativo, você vai poder acompanhar a grade de programação, visualizar informações dos palestrantes, votar onde será o próximo DevFest Norte e muito mais! Para começar, clique em INICIAR.</string>
 
     <!-- Short text welcoming the user to the application -->
     <string name="welcome_to_google_i_o_app">Bem-vindo à app do GDG DevFest Norte!</string>

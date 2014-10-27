@@ -27,13 +27,13 @@
         android:layout_weight="1"
         android:background="#e5e5e5">
 
-        <ImageView
-            android:src="@drawable/io2014_logo"
-            android:layout_width="200dp"
-            android:layout_height="100dp"
-            android:scaleType="fitCenter"
-            android:tint="#7000"
-            android:layout_gravity="center|top" />
+        <!--<ImageView-->
+            <!--android:src="@drawable/io2014_logo"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:tint="#7000"-->
+            <!--android:layout_gravity="center|top" />-->
 
         <ScrollView
             android:layout_width="match_parent"
@@ -94,18 +94,18 @@
         android:layout_gravity="bottom"
         android:layout_width="match_parent">
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:background="?photoItemForeground"
-            android:text="@string/decline"
-            android:textColor="#8fff"
-            android:textSize="@dimen/text_size_medium"
-            android:textStyle="@integer/font_textStyle_medium"
-            android:fontFamily="@string/font_fontFamily_medium"
-            android:textAllCaps="true"
-            android:id="@+id/button_decline" />
+        <!--<Button-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="?photoItemForeground"-->
+            <!--android:text="@string/decline"-->
+            <!--android:textColor="#8fff"-->
+            <!--android:textSize="@dimen/text_size_medium"-->
+            <!--android:textStyle="@integer/font_textStyle_medium"-->
+            <!--android:fontFamily="@string/font_fontFamily_medium"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:id="@+id/button_decline" />-->
 
         <Button
             android:id="@+id/button_accept"
@@ -113,7 +113,7 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:background="?photoItemForeground"
-            android:text="@string/accept"
+            android:text="@string/begin"
             android:textSize="@dimen/text_size_medium"
             android:textStyle="@integer/font_textStyle_medium"
             android:fontFamily="@string/font_fontFamily_medium"

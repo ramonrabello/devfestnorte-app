@@ -76,7 +76,6 @@ import br.com.devfest.norte.io.JSONHandler;
 import br.com.devfest.norte.provider.ScheduleContract;
 import br.com.devfest.norte.sync.ConferenceDataHandler;
 import br.com.devfest.norte.sync.SyncHelper;
-import br.com.devfest.norte.ui.debug.DebugActionRunnerActivity;
 import br.com.devfest.norte.ui.widget.MultiSwipeRefreshLayout;
 import br.com.devfest.norte.ui.widget.SwipeRefreshLayout;
 import br.com.devfest.norte.util.AccountUtils;
@@ -721,24 +720,24 @@ public abstract class BaseActivity extends FragmentActivity implements
                 WiFiUtils.showWiFiDialog(this);
                 return true;
 
-            case R.id.menu_i_o_hunt:
-                launchIoHunt();
-                return true;
+//            case R.id.menu_i_o_hunt:
+//                launchIoHunt();
+//                return true;
 
-            case R.id.menu_debug:
-                if (BuildConfig.DEBUG) {
-                    startActivity(new Intent(this, DebugActionRunnerActivity.class));
-                }
-                return true;
+//            case R.id.menu_debug:
+//                if (BuildConfig.DEBUG) {
+//                    startActivity(new Intent(this, DebugActionRunnerActivity.class));
+//                }
+//                return true;
 
             case R.id.menu_refresh:
                 requestDataRefresh();
                 break;
 
-            case R.id.menu_io_extended:
-                startActivity(new Intent(Intent.ACTION_VIEW,
-                        Uri.parse(Config.IO_EXTENDED_LINK)));
-                break;
+//            case R.id.menu_io_extended:
+//                startActivity(new Intent(Intent.ACTION_VIEW,
+//                        Uri.parse(Config.IO_EXTENDED_LINK)));
+//                break;
 
             case R.id.menu_map:
                 startActivity(new Intent(this, UIUtils.getMapActivityClass(this)));
