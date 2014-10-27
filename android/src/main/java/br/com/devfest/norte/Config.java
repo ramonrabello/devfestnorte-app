@@ -65,7 +65,7 @@ public class Config {
               ParserUtils.parseTime("2014-11-01T18:00:00.000Z") }
             };
 
-    public static final TimeZone CONFERENCE_TIMEZONE = TimeZone.getTimeZone("America/Sao_Paulo");
+    public static final TimeZone CONFERENCE_TIMEZONE = TimeZone.getTimeZone("America/Brasilia");
 
     public static final long CONFERENCE_START_MILLIS = CONFERENCE_DAYS[0][0];
     public static final long CONFERENCE_END_MILLIS = CONFERENCE_DAYS[CONFERENCE_DAYS.length-1][1];

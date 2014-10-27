@@ -8,14 +8,10 @@
     android:background="@color/gray_background"
     tools:context=".ui.NextYearDevFest">
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/linear_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="100dp"
-        android:paddingBottom="16dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
         android:orientation="vertical">
 
         <include layout="@layout/toolbar_actionbar" />
@@ -52,24 +48,31 @@
         <!--</LinearLayout>-->
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/card_bg"
             android:orientation="vertical"
-            android:padding="24dp"
-            android:paddingBottom="16dp"
-            android:layout_gravity="center"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="100dp">
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="@dimen/margin_left_card_next_year_devfest_otherday"
+            android:layout_marginStart="@dimen/margin_left_card_next_year_devfest_otherday"
+            android:layout_marginRight="@dimen/margin_right_card_next_year_devfest_otherday"
+            android:layout_marginEnd="@dimen/margin_right_card_next_year_devfest_otherday"
+            android:layout_marginTop="@dimen/margin_top_card_next_year_devfest_otherday"
+            android:layout_marginBottom="@dimen/margin_bottom_card_next_year_devfest_otherday"
+            android:gravity="center">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@string/font_fontFamily_medium"
-                android:text="Ops! A votação ainda não está disponível"
+                android:text="@string/title_poll_not_yet_available"
                 android:textColor="@color/theme_primary"
                 android:textSize="@dimen/text_size_xlarge"
+                android:gravity="center"
                 android:textStyle="@integer/font_textStyle_medium" />
 
             <TextView
@@ -77,6 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:autoLink="web"
+                android:gravity="center"
                 android:text="Acesse novamente esta tela durante o evento e ajude a escolher a cidade onde estaremos em 2015!"
                 android:textColor="@color/body_text_2"
                 android:textSize="@dimen/text_size_medium" />
@@ -93,7 +97,7 @@
         </LinearLayout>
 
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <include layout="@layout/navdrawer" />
 

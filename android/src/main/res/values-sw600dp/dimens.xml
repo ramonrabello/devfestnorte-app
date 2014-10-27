@@ -53,5 +53,9 @@
     <dimen name="keyline_2_session_detail">104dp</dimen>
 
     <dimen name="session_detail_speaker_left_offset">32dp</dimen> <!-- to center with FAB -->
+    <dimen name="margin_left_card_next_year_devfest_otherday">100dp</dimen>
+    <dimen name="margin_right_card_next_year_devfest_otherday">100dp</dimen>
+    <dimen name="margin_top_card_next_year_devfest_otherday">24dp</dimen>
+    <dimen name="margin_bottom_card_next_year_devfest_otherday">24dp</dimen>
 
 </resources>

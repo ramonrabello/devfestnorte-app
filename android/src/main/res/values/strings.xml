@@ -839,6 +839,7 @@
     <string name="title_next_year_devfest">DevFest Norte 2015</string>
     <string name="web_cloud_schedule_list_header">Web / Cloud</string>
     <string name="mobile_schedule_list_header">Mobile</string>
+    <string name="title_poll_not_yet_available">Ops! A votação ainda não está disponível</string>
 
 </resources>
 

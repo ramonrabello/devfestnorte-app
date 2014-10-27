@@ -770,4 +770,5 @@
     <string name="title_experts_directory">Especialistas</string>
     <string name="title_people_ive_met">Pessoas que Conheci</string>
     <string name="title_next_year_devfest">DevFest Norte 2015</string>
+    <string name="title_poll_not_yet_available">Ops! A votação ainda não está disponível</string>
 </resources>

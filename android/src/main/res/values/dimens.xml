@@ -130,5 +130,8 @@
     <dimen name="social_hz_margin">0dp</dimen>
     <dimen name="hashtag_text_size">14sp</dimen>
     <dimen name="hashtag_hero_text_size">45sp</dimen>
-
+    <dimen name="margin_left_card_next_year_devfest_otherday">100dp</dimen>
+    <dimen name="margin_right_card_next_year_devfest_otherday">100dp</dimen>
+    <dimen name="margin_top_card_next_year_devfest_otherday">24dp</dimen>
+    <dimen name="margin_bottom_card_next_year_devfest_otherday">24dp</dimen>
 </resources>
