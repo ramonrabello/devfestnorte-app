@@ -26,7 +26,7 @@
         <ImageView android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/default_cover"
+            android:src="@drawable/default_devfestnorte_cover"
             android:tint="@color/session_photo_scrim"
             android:id="@+id/profile_cover_image" />
 

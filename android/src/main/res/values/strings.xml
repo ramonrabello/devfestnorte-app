@@ -282,7 +282,7 @@
     <string name="got_it">Got it</string>
 
     <!-- Conference hashtag -->
-    <string name="io14_hashtag" translatable="false">#io14</string>
+    <string name="io14_hashtag" translatable="false">#devfestnorte</string>
 
     <!-- Short text appended to the end of the session subtitle when the session will be live
     streamed. Constrained to 10 chars because the session subtitle should be small enough to fit

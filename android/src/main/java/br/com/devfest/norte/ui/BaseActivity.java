@@ -557,7 +557,7 @@ public abstract class BaseActivity extends FragmentActivity implements
         if (coverImageUrl != null) {
             mImageLoader.loadImage(coverImageUrl, coverImageView);
         } else {
-            coverImageView.setImageResource(R.drawable.default_cover);
+            coverImageView.setImageResource(R.drawable.default_devfestnorte_cover);
         }
 
         email.setText(chosenAccount.name);
