@@ -305,7 +305,7 @@
         "TOPIC_WEB"
       ],
       "mainTag": "THEME_WEB",
-      "id": "f184af29-46d2-e3e1-b297-00155d5066d9",
+      "id": "f184af29-46d2-e311-b297-00155d5066d7",
       "color": "#005CE6",
       "room": "solarium1",
       "hashtag": "web",
@@ -324,7 +324,7 @@
             "TOPIC_ANDROID"
           ],
           "mainTag": "THEME_ANDROID",
-          "id": "f184af29-46d2-e3e1-b297-00155d5066d9",
+          "id": "bc11152b-c4cf-e311-b297-00155d5066d7",
           "color": "#B30000",
           "room": "solarium2",
           "hashtag": "android",

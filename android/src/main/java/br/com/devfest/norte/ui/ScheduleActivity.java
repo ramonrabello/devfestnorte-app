@@ -31,8 +31,12 @@ public class ScheduleActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule);
-        ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
-        viewPager.setAdapter(new ScheduleTrackAdapter(getSupportFragmentManager()));
+        boolean isTablet = getResources().getBoolean(R.bool.is_tablet);
+
+        if (!isTablet){
+            ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
+            viewPager.setAdapter(new ScheduleTrackAdapter(getSupportFragmentManager()));
+        }
     }
 
     private class ScheduleTrackAdapter extends FragmentPagerAdapter {
