@@ -17,7 +17,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/my_schedule_item_height"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingBottom="8dp"
     android:paddingLeft="@dimen/keyline_1"
@@ -30,8 +30,8 @@
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:orientation="horizontal">
@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Start -->
+            <!-- Start time -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -61,12 +61,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="00"
+                    android:layout_marginLeft="2dp"
                     android:textColor="@color/body_text_2"
                     android:textSize="@dimen/text_size_medium" />
 
             </LinearLayout>
 
-            <!-- End -->
+            <!-- End time -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -87,6 +88,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="bottom"
                     android:text="00"
+                    android:layout_marginLeft="2dp"
                     android:textColor="@color/body_text_2"
                     android:textSize="@dimen/text_size_medium" />
 
@@ -106,9 +108,8 @@
 
             <TextView
                 android:id="@+id/slot_title"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:text="O desafio do desenvolvimento da app em 33 países"
                 android:textSize="@dimen/text_size_large" />
 
@@ -134,7 +135,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginLeft="12dp"
                     android:orientation="vertical">
 

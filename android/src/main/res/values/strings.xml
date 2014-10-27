@@ -88,7 +88,7 @@
     <string name="all_years">All Years</string>
 
     <!-- Name of the application, shown in the application's title bar. -->
-    <string name="app_name">GDG DevFest Norte</string>
+    <string name="app_name">GDG DevFest Norte 2014</string>
 
     <!-- Label on a button that is one possible answer to the question "Are you attending the
     conference in person in San Francisco or remotely via livestream?" -->
@@ -840,6 +840,7 @@
     <string name="web_cloud_schedule_list_header">Web / Cloud</string>
     <string name="mobile_schedule_list_header">Mobile</string>
     <string name="title_poll_not_yet_available">Ops! A votação ainda não está disponível</string>
+    <string name="begin">Begin</string>
 
 </resources>
 

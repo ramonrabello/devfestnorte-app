@@ -128,7 +128,6 @@ public class BrowseSessionsActivity extends BaseActivity implements SessionsFrag
         if (mMode == MODE_EXPLORE) {
             // no title (to make more room for navigation and actions)
             // unless Nav Drawer opens
-            ab.setTitle(getString(R.string.app_name));
             ab.setDisplayShowTitleEnabled(false);
         }
 
@@ -186,7 +185,7 @@ public class BrowseSessionsActivity extends BaseActivity implements SessionsFrag
     @Override
     protected int getSelfNavDrawerItem() {
         // we only have a nav drawer if we are in top-level Explore mode.
-        return mMode == MODE_EXPLORE ? NAVDRAWER_ITEM_EXPLORE : NAVDRAWER_ITEM_INVALID;
+        return NAVDRAWER_ITEM_EXPLORE;
     }
 
     @Override
@@ -224,7 +223,7 @@ public class BrowseSessionsActivity extends BaseActivity implements SessionsFrag
             mFilterTagsToRestore[1] = mFilterTags[1];
             mFilterTagsToRestore[2] = mFilterTags[2];
         }
-        trySetUpActionBarSpinner();
+        //trySetUpActionBarSpinner();
     }
 
     private void trySetUpActionBarSpinner() {
@@ -293,22 +292,35 @@ public class BrowseSessionsActivity extends BaseActivity implements SessionsFrag
         updateActionBarNavigation();
     }
 
-    private void updateActionBarNavigation() {
-        boolean show = mSpinnerConfigured && !isNavDrawerOpen();
+//    private void updateActionBarNavigation() {
+//
+//
+//        boolean show = mSpinnerConfigured && !isNavDrawerOpen();
+//
+//        ActionBar ab = getActionBar();
+//        if (mMode == MODE_TIME_FIT) {
+//            ab.setDisplayShowCustomEnabled(false);
+//            ab.setDisplayShowTitleEnabled(true);
+//            ab.setDisplayUseLogoEnabled(false);
+//        } else if (show) {
+//            ab.setDisplayShowCustomEnabled(true);
+//            ab.setDisplayShowTitleEnabled(false);
+//            ab.setDisplayUseLogoEnabled(false);
+//        } else if (getLPreviewUtils().shouldChangeActionBarForDrawer()) {
+//            ab.setDisplayShowCustomEnabled(false);
+//            ab.setDisplayShowTitleEnabled(false);
+//            ab.setDisplayUseLogoEnabled(true);
+//        }
+//
+//
+//    }
 
-        ActionBar ab = getActionBar();
-        if (mMode == MODE_TIME_FIT) {
-            ab.setDisplayShowCustomEnabled(false);
-            ab.setDisplayShowTitleEnabled(true);
-            ab.setDisplayUseLogoEnabled(false);
-        } else if (show) {
-            ab.setDisplayShowCustomEnabled(true);
-            ab.setDisplayShowTitleEnabled(false);
-            ab.setDisplayUseLogoEnabled(false);
-        } else if (getLPreviewUtils().shouldChangeActionBarForDrawer()) {
-            ab.setDisplayShowCustomEnabled(false);
-            ab.setDisplayShowTitleEnabled(false);
-            ab.setDisplayUseLogoEnabled(true);
+    private void updateActionBarNavigation() {
+        boolean show = !isNavDrawerOpen();
+        if (getLPreviewUtils().shouldChangeActionBarForDrawer()) {
+            ActionBar ab = getActionBar();
+            ab.setDisplayShowTitleEnabled(show);
+            ab.setDisplayUseLogoEnabled(!show);
         }
     }
 
