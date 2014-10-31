@@ -21,12 +21,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import br.com.devfest.norte.R;
 import br.com.devfest.norte.model.BaseScheduleItem;
 import br.com.devfest.norte.model.SpeakerScheduleItem;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MobileScheduleFragment extends BaseScheduleFragment {
 
@@ -100,8 +100,8 @@ public class MobileScheduleFragment extends BaseScheduleFragment {
         speakerScheduleItem.setDescription("Animando a UI: entregue uma experiência, não apenas um aplicativo");
         speakerScheduleItem.setSpeakerName("Santhyago Gallão");
         speakerScheduleItem.setSpeakerCcompany("Samsung");
-        speakerScheduleItem.setStart("11:30");
-        speakerScheduleItem.setEnd("12:30");
+        speakerScheduleItem.setStart("13:30");
+        speakerScheduleItem.setEnd("14:30");
         speakerScheduleItem.setSessionType("mobile");
         speakerScheduleItem.setSpeakerPlusProfileImage(R.drawable.rsz_1santiago);
         items.add(speakerScheduleItem);
@@ -111,8 +111,8 @@ public class MobileScheduleFragment extends BaseScheduleFragment {
         speakerScheduleItem.setDescription("Ionic Framework: aplicações móveis híbridas com HTML5 e Angular JS");
         speakerScheduleItem.setSpeakerName("Gabriel Castro");
         speakerScheduleItem.setSpeakerCcompany("UNA-SUS/UFMA");
-        speakerScheduleItem.setStart("13:30");
-        speakerScheduleItem.setEnd("14:30");
+        speakerScheduleItem.setStart("14:30");
+        speakerScheduleItem.setEnd("15:30");
         speakerScheduleItem.setSessionType("mobile");
         speakerScheduleItem.setSpeakerPlusProfileImage(R.drawable.rsz_1gabrielcastro);
         items.add(speakerScheduleItem);
