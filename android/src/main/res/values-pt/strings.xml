@@ -324,7 +324,7 @@
     <string name="navdrawer_item_map">Mapa</string>
 
     <!-- Menu item to open the My Schedule screen [CHAR_LIMIT=20] -->
-    <string name="navdrawer_item_my_schedule">Minha Agenda</string>
+    <string name="navdrawer_item_my_schedule">Agenda</string>
 
     <!-- Menu item to open the People I've Met screen [CHAR_LIMIT=20] -->
     <string name="navdrawer_item_people_ive_met">Pessoas que Conheci</string>
@@ -680,7 +680,7 @@
     <string name="title_map">Mapa</string>
 
     <!-- Navigation bar text for viewing the user's schedule -->
-    <string name="title_my_schedule">Minha Agenda</string>
+    <string name="title_my_schedule">Agenda</string>
 
     <!-- Navigation bar text for viewing Office Hours -->
     <string name="title_office_hours">Horário de Funcionamento</string>

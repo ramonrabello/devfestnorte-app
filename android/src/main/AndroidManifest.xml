@@ -18,8 +18,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="br.com.devfest.norte"
-    android:versionCode="3"
-    android:versionName="0.1"
+    android:versionCode="4"
+    android:versionName="0.2"
     android:installLocation="auto">
 
     <!-- targetSdkVersion set to 19 from build.gradle on non-L-preview builds -->

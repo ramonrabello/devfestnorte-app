@@ -26,7 +26,7 @@ repositories {
 }
 
 android {
-    compileSdkVersion lpreview ? "android-L" : 19
+    compileSdkVersion 21
     buildToolsVersion "20.0.0"
 
     productFlavors { lpreview ? lpreview{} : classic{} }
@@ -34,7 +34,7 @@ android {
     defaultConfig lpreview ? {} : {
         // Non-L-preview configuration
         minSdkVersion 14
-        targetSdkVersion 19
+        targetSdkVersion 21
     }
 
     signingConfigs {
